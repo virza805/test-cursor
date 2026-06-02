@@ -1,291 +1,137 @@
-# 🚀 SaaS Product Development Roadmap
-### WordPress Developer → Modern SaaS Stack
+<div align="center">
+  <br />
+    <a href="https://github.com/your-org/saas" target="_blank">
+      <img src="public/readme/readme-hero.webp" alt="Project Banner">    
+    </a>
+  <br />
 
-> **Stack:** PostgreSQL · Next.js · Supabase · Vercel
-> **Estimated Total Time:** 2–3 months (2–3 hours/day)
+  <div>
+<img src="https://img.shields.io/badge/-Next.js-black?style=for-the-badge&logo=Next.js&logoColor=white" /> 
+<img src="https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white" /> 
+<img src="https://img.shields.io/badge/-Tailwind-06B6D4?style=for-the-badge&logo=Tailwind%20CSS&logoColor=white" />
+<img src="https://img.shields.io/badge/-Supabase-3ECF8E?style=for-the-badge&logo=Supabase&logoColor=white" /><br/>
+<img src="https://img.shields.io/badge/-PostHog-EB9D2A?style=for-the-badge&logo=PostHog&logoColor=white" /> 
+  </div>
 
----
+  <h3 align="center">Dev Event Platform</h3>
 
-## 🧠 Your Advantage as a WordPress Developer
+   <div align="center">
+     A full-stack developer event platform built with Next.js 16, Supabase, and PostHog.
+    </div>
+</div>
 
-| WordPress Experience | SaaS Equivalent |
-|---|---|
-| PHP template hierarchy | Next.js App Router |
-| REST API / WP AJAX | Next.js API Routes & Server Actions |
-| Hooks & Filters | React Hooks & Middleware |
-| Plugin architecture | Next.js component modules |
-| Gutenberg blocks | React Server & Client Components |
-| MySQL (WP database) | PostgreSQL (Supabase database) |
-| WP Engine / cPanel hosting | Vercel deployment |
-| ACF / Custom Post Types | Supabase Tables & JSONB |
+## 📋 <a name="table">Table of Contents</a>
 
-You already know more than you think. Gutenberg block development means React is **half-known** for you!
+1. ✨ [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🗄️ [Database Schema](#database-schema)
+5. 🤸 [Quick Start](#quick-start)
 
----
+## <a name="introduction">✨ Introduction</a>
 
-## PHASE 1 — PostgreSQL
-**⏱ Estimated Time: 2–3 weeks**
+A developer-focused event platform for discovering, creating, and booking events like hackathons, meetups, and conferences. Built with Next.js 16's new `use cache` directive for optimal performance, Supabase as the backend database, and PostHog for analytics and error tracking.
 
-### Why First?
-Supabase runs entirely on PostgreSQL. Your MySQL knowledge from WordPress carries over — but PostgreSQL is more powerful and has some key differences you must learn.
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-### What to Learn
-- Tables, relationships, JOINs (similar to WP — you know this)
-- PostgreSQL-specific types: `SERIAL`, `UUID`, `JSONB`, `ARRAY`
-- **Row Level Security (RLS)** — critical for Supabase auth & data protection
-- Indexes, constraints, foreign keys
-- Database migrations
+- **[Next.js 16](https://nextjs.org/docs)** — React framework with App Router, Server Actions, and the new `use cache` / `cacheLife` APIs. Built with Turbopack.
 
-### 📚 Recommended Resources
+- **[React 19](https://react.dev/)** — UI library powering both server and client components.
 
-| Resource | Language | Link |
-|---|---|---|
-| STUDY MART — Complete SQL Bangla Course | 🇧🇩 Bangla | https://www.youtube.com/playlist?list=PLKdU0fuY4OFcFIBec_8y8QuqjmmeeYRtX |
-| freeCodeCamp — Learn PostgreSQL Full Course | 🇬🇧 English | https://www.youtube.com/watch?v=qw--VYLpxG4 |
-| W3Schools PostgreSQL Reference | 🇬🇧 English | https://www.w3schools.com/postgresql/ |
+- **[TypeScript](https://www.typescriptlang.org/)** — Static typing across the entire codebase.
 
-### ✅ Phase 1 Checklist
-- [ ] Install PostgreSQL & pgAdmin locally
-- [ ] Create tables, define relationships
-- [ ] Write SELECT, INSERT, UPDATE, DELETE queries
-- [ ] Understand JOINs (INNER, LEFT, RIGHT, FULL)
-- [ ] Learn UUID as primary key (Supabase default)
-- [ ] Understand JSONB column type
-- [ ] Write and apply Row Level Security (RLS) policies
-- [ ] Practice indexing for query performance
+- **[Tailwind CSS v4](https://tailwindcss.com/)** — Utility-first CSS framework for rapid styling.
 
----
+- **[Supabase](https://supabase.com/)** — Postgres-backed backend-as-a-service used for storing events and bookings. Admin and browser clients are used separately with Row Level Security (RLS) policies.
 
-## PHASE 2 — Next.js
-**⏱ Estimated Time: 4–6 weeks**
+- **[PostHog](https://posthog.com/)** — Product analytics and error tracking, initialized via `instrumentation-client.ts`.
 
-### Why Next.js?
-Next.js is your new "WordPress theme + plugin system" combined into one modern framework. It handles routing, rendering, API, caching, and deployment — all in one.
+- **[OGL](https://github.com/oframe/ogl)** — Lightweight WebGL library powering the animated light-rays background effect.
 
-### What to Learn
-- App Router & File-based Routing
-- React Server Components vs Client Components
-- Layouts, Loading, Error boundaries
-- Data Fetching strategies (SSR, SSG, ISR)
-- API Routes (replaces WP REST API)
-- Server Actions (replaces AJAX in many cases)
-- Caching & Revalidation
-- Middleware (replaces WP authentication checks)
-- Metadata & SEO
-- Image optimization (`next/image`)
-- TypeScript basics with Next.js
+- **[Lucide React](https://lucide.dev/)** — Icon library for UI icons.
 
-### 📚 Recommended Resources
+## <a name="features">🔋 Features</a>
 
-| Resource | Language | Link |
-|---|---|---|
-| JS Mastery — Next.js 16 Full Course (4h 10m) | 🇬🇧 English | https://www.youtube.com/watch?v=I1V9YWqRIeI |
-| JavaScript Mastery Channel | 🇬🇧 English | https://www.youtube.com/@javascriptmastery |
-| Stack Learner — Next.js Bangla | 🇧🇩 Bangla | Search "Stack Learner Next.js" on YouTube |
-| Programming Hero — Next.js Bangla | 🇧🇩 Bangla | Search "Programming Hero Next.js" on YouTube |
+👉 **Home Page** — Fetches and renders upcoming developer events using Next.js `use cache` with an hourly cache lifetime.
 
-### ✅ Phase 2 Checklist
-- [ ] Setup Next.js project with TypeScript & Tailwind CSS
-- [ ] Understand App Router folder structure
-- [ ] Create static and dynamic routes
-- [ ] Build layouts with nested routing
-- [ ] Use Server Components for data fetching
-- [ ] Use Client Components for interactivity
-- [ ] Create API Routes (GET, POST, PUT, DELETE)
-- [ ] Implement Server Actions (form submissions)
-- [ ] Configure metadata for SEO
-- [ ] Optimize images with `next/image`
-- [ ] Deploy a basic project to Vercel
+👉 **Event Details Page** — Shows full event info (venue, date, mode, agenda, organizer) and similar events matched by shared tags.
 
----
+👉 **Event Booking** — Users can register for events by email. Duplicate bookings are prevented via a unique constraint.
 
-## PHASE 3 — Supabase
-**⏱ Estimated Time: 2–3 weeks**
+👉 **Create Event** — A form to submit new developer events into the platform.
 
-### Why Supabase?
-Supabase is your hosted PostgreSQL database + Authentication + File Storage + Realtime — without managing a separate backend server. Think of it as Firebase but open-source and SQL-based.
+👉 **API Routes** — REST endpoints under `/api/events` for fetching and creating events.
 
-### What to Learn
-- Supabase project setup & dashboard
-- Table editor & SQL editor
-- Authentication (Email/Password, Google OAuth, Magic Link)
-- **RLS Policies** — securing data at the database level
-- Supabase JS SDK in Next.js (`@supabase/supabase-js`)
-- CRUD operations from Next.js
-- File uploads to Supabase Storage
-- Realtime subscriptions (live data updates)
-- Edge Functions (Supabase serverless functions)
-- Database migrations with Supabase CLI
+👉 **Next.js 16 Caching** — Uses the new `'use cache'` directive and `cacheLife` helper; cache is invalidated via `revalidatePath` on booking.
 
-### 📚 Recommended Resources
+👉 **PostHog Analytics** — Tracks user interactions and captures exceptions in production.
 
-| Resource | Language | Link |
-|---|---|---|
-| Supabase Official Docs | 🇬🇧 English | https://supabase.com/docs/guides/getting-started |
-| Supabase + Next.js Official Tutorial | 🇬🇧 English | https://supabase.com/docs/guides/getting-started/tutorials/with-nextjs |
-| egghead.io — Build a SaaS with Next.js, Supabase & Stripe (Free) | 🇬🇧 English | https://egghead.io/courses/build-a-saas-product-with-next-js-supabase-and-stripe-61f2bc20 |
-| freeCodeCamp Supabase Course | 🇬🇧 English | Search "freeCodeCamp Supabase" on YouTube |
+👉 **Animated Background** — WebGL-powered light-rays effect via the OGL library.
 
-### ✅ Phase 3 Checklist
-- [ ] Create a Supabase project
-- [ ] Design database schema using Table Editor
-- [ ] Connect Supabase to Next.js app
-- [ ] Implement Email/Password authentication
-- [ ] Add Google OAuth login
-- [ ] Write RLS policies to protect data
-- [ ] Perform CRUD operations via Supabase SDK
-- [ ] Upload files to Supabase Storage
-- [ ] Implement Realtime data subscription
-- [ ] Use Supabase CLI for local development
+## <a name="database-schema">🗄️ Database Schema</a>
 
----
+The Supabase schema, RLS policies, and seed data are located in [`database/csv/`](database/csv/):
 
-## PHASE 4 — Vercel
-**⏱ Estimated Time: 3–5 days**
+| File | Purpose |
+|------|---------|
+| `supabase_schema.sql` | Table definitions for `events` and `booking` |
+| `supabase_rls.sql` | Row Level Security policies |
+| `supabase_defaults.sql` | Default data |
+| `events.csv` / `bookings.csv` | Sample seed data |
 
-### Why Vercel?
-Vercel is the official hosting platform for Next.js — made by the same team. Think of it as WP Engine but for modern JavaScript apps, with zero-config deployment, CI/CD, preview URLs, and edge performance.
+**Event fields:** `id`, `title`, `slug`, `description`, `overview`, `image`, `venue`, `location`, `date`, `time`, `mode` (online/offline/hybrid), `audience`, `agenda`, `organizer`, `tags`, `created_at`, `updated_at`
 
-### What to Learn
-- Connect GitHub repo → Vercel auto-deploy
-- Environment variables management (`.env.local` → Vercel dashboard)
-- Preview deployments (automatic per branch/PR)
-- Production vs Preview vs Development environments
-- Vercel Analytics & Core Web Vitals
-- Edge Middleware on Vercel
-- Custom domain setup
-- Vercel Blob (file storage alternative)
+**Booking fields:** `id`, `event_id`, `email`, `created_at`, `updated_at`
 
-### 📚 Recommended Resources
+## <a name="quick-start">🤸 Quick Start</a>
 
-| Resource | Language | Link |
-|---|---|---|
-| Vercel Official Documentation | 🇬🇧 English | https://vercel.com/docs |
-| Vercel + Supabase Starter Template | 🇬🇧 English | https://vercel.com/templates/next.js/supabase |
-| Covered inside JS Mastery Next.js 16 Course | 🇬🇧 English | https://www.youtube.com/watch?v=I1V9YWqRIeI&t=14244s |
+**Prerequisites**
 
-### ✅ Phase 4 Checklist
-- [ ] Push Next.js project to GitHub
-- [ ] Connect GitHub to Vercel
-- [ ] Configure environment variables in Vercel dashboard
-- [ ] Understand preview vs production deployments
-- [ ] Set up a custom domain
-- [ ] Enable Vercel Analytics
-- [ ] Test Vercel Edge Middleware
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en) (v18+)
+- [npm](https://www.npmjs.com/)
+- A [Supabase](https://supabase.com/) project with the schema applied from `database/csv/supabase_schema.sql`
 
----
+**Cloning the Repository**
 
-## PHASE 5 — Vercel + Next.js + Supabase (Full SaaS Integration)
-**⏱ Estimated Time: 3–4 weeks**
-
-### This is the Real Goal
-Now everything comes together. You build a production-ready SaaS application from scratch with auth, database, payments, and deployment.
-
-### What to Build
-- User Authentication (sign up, login, OAuth, magic link)
-- Protected routes with middleware
-- Subscription billing with Stripe
-- User dashboard with real-time data
-- File uploads to Supabase Storage
-- Error tracking with Sentry
-- Analytics with PostHog
-- CI/CD pipeline with GitHub → Vercel
-- Custom domain + production deployment
-
-### 📚 Recommended Resources
-
-| Resource | Language | Link |
-|---|---|---|
-| JS Mastery — SaaS Full Course 2025 (Free) | 🇬🇧 English | https://www.youtube.com/watch?v=XUkNR-JfHwo |
-| Udemy — Next.js & Supabase Mastery (2 Projects) | 🇬🇧 English | https://www.udemy.com/course/master-nextjs-full-stack/ |
-| Vercel SaaS Subscription Starter Kit | 🇬🇧 English | https://vercel.com/templates/next.js/subscription-starter |
-| egghead.io — Build SaaS with Next.js, Supabase & Stripe | 🇬🇧 English | https://egghead.io/courses/build-a-saas-product-with-next-js-supabase-and-stripe-61f2bc20 |
-
-### ✅ Phase 5 Checklist
-- [ ] Build full authentication flow (Supabase Auth or Clerk)
-- [ ] Implement protected routes with Next.js Middleware
-- [ ] Create user dashboard (reads from Supabase DB)
-- [ ] Add subscription plans with Stripe
-- [ ] Implement webhook handling (Stripe → Supabase)
-- [ ] Add file upload feature (Supabase Storage)
-- [ ] Set up error monitoring (Sentry)
-- [ ] Add analytics (PostHog or Vercel Analytics)
-- [ ] Deploy to Vercel with custom domain
-- [ ] Test RLS policies for all user roles
-
----
-
-## 📋 Complete Learning Path (Summary)
-
-```
-Week 1–3   →  Phase 1: PostgreSQL
-               ✦ STUDY MART Bangla Playlist (16 videos)
-               ✦ Focus: RLS, UUID, JSONB
-
-Week 4–9   →  Phase 2: Next.js
-               ✦ JS Mastery Next.js 16 Full Course (4h 10m)
-               ✦ Build 2–3 small projects to practice
-
-Week 10–12 →  Phase 3: Supabase
-               ✦ Official Supabase Docs + egghead.io free SaaS course
-               ✦ Connect Supabase to your Next.js project
-
-Week 13    →  Phase 4: Vercel
-               ✦ Vercel Docs (3–5 days max)
-               ✦ Already covered in Next.js course
-
-Week 14–17 →  Phase 5: Full SaaS Project
-               ✦ JS Mastery SaaS Full Course 2025
-               ✦ Build & deploy a complete SaaS app
+```bash
+git clone <your-repo-url>
+cd saas
 ```
 
----
+**Installation**
 
-## 🛠️ Recommended Tech Stack for Your First SaaS
-
-```
-Frontend      →  Next.js 16 (App Router) + TypeScript
-Styling       →  Tailwind CSS + shadcn/ui
-Database      →  Supabase (PostgreSQL)
-Auth          →  Supabase Auth or Clerk
-Payments      →  Stripe
-File Storage  →  Supabase Storage
-Deployment    →  Vercel
-Error Track   →  Sentry
-Analytics     →  PostHog or Vercel Analytics
-Email         →  Resend or Supabase Edge Functions
+```bash
+npm install
 ```
 
----
+**Set Up Environment Variables**
 
-## 🇧🇩 বাংলায় সংক্ষিপ্ত গাইড
+Create a `.env.local` file in the project root:
 
-### ধাপ ১ — PostgreSQL (সপ্তাহ ১–৩)
-STUDY MART-এর Bangla playlist দিয়ে শুরু করুন (আপনার shared link)। ১৬টি ভিডিও শেষ করুন। বিশেষভাবে **RLS (Row Level Security)** এবং **JSONB** ভালো করে শিখুন — Supabase-এ এটা অত্যন্ত critical। MySQL জানলে PostgreSQL শিখতে বেশি সময় লাগবে না।
+```env
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
-### ধাপ ২ — Next.js (সপ্তাহ ৪–৯)
-JS Mastery-এর আপনার shared Next.js 16 Full Course (৪ ঘণ্টা ১০ মিনিট) পুরোটা দেখুন। Bangla-তে চাইলে **Stack Learner** বা **Programming Hero** YouTube-এ "Next.js Bangla" সার্চ করুন। আপনার Gutenberg block experience থাকায় React-এর concept অনেক দ্রুত বুঝবেন।
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 
-### ধাপ ৩ — Supabase (সপ্তাহ ১০–১২)
-Supabase-এর official docs অনেক ভালো, সহজ এবং সরাসরি Next.js example সহ আছে। egghead.io-তে একটি free SaaS course আছে — সেটা অবশ্যই করুন। এটা Firebase-এর মতোই কিন্তু PostgreSQL-based।
+NEXT_PUBLIC_POSTHOG_KEY=your_posthog_api_key
+```
 
-### ধাপ ৪ — Vercel (সপ্তাহ ১৩)
-Next.js course-এর মধ্যেই Vercel deployment শিখিয়ে দেবে। আলাদা করে বেশি সময় দিতে হবে না — ৩ থেকে ৫ দিনই যথেষ্ট। GitHub connect করলে automatic deploy হয়।
+Obtain these from your [Supabase project settings](https://supabase.com/dashboard) and [PostHog](https://posthog.com/) account.
 
-### ধাপ ৫ — Full SaaS Project (সপ্তাহ ১৪–১৭)
-JS Mastery-এর SaaS Full Course 2025 দিয়ে একটি real SaaS app বানান। এটাই আপনার portfolio-তে সবচেয়ে বেশি কাজে আসবে এবং client পাওয়া সহজ হবে।
+**Running the Project**
 
----
+```bash
+npm run dev
+```
 
-## 💡 Pro Tips
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-1. **Gutenberg → React:** আপনি Gutenberg block বানিয়েছেন মানে আপনি ইতিমধ্যে React জানেন — Next.js শিখতে অনেক কম সময় লাগবে।
-2. **WordPress REST API → Next.js API Routes:** এই দুটো কনসেপ্ট প্রায় একই। সহজেই relate করতে পারবেন।
-3. **Don't skip RLS:** Supabase-এর Row Level Security না জানলে আপনার SaaS app insecure থাকবে।
-4. **Build, don't just watch:** প্রতিটি phase শেষে একটি ছোট project বানান। শুধু দেখলে শেখা হয় না।
-5. **TypeScript from the start:** WordPress PHP থেকে আসলে TypeScript একটু কঠিন মনে হবে — তবে শুরু থেকেই ব্যবহার করুন, পরে অনেক সহজ হয়।
+**Building for Production**
 
----
-
-*Guide prepared for transitioning from WordPress/Divi/Gutenberg development to modern SaaS stack.*
-*Last updated: June 2026*
+```bash
+npm run build
+npm start
+```
