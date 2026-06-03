@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://nextjs16-supabase-o9mu2k6nj-virza805s-projects.vercel.app/" target="_blank">
+    <a href="https://nextjs16-supabase.vercel.app/" target="_blank">
       <img src="public/readme/readme-hero.webp" alt="Project Banner">    
     </a>
   <br />
@@ -17,7 +17,7 @@
   <h3 align="center">Dev Event Platform</h3>
 
    <div align="center">
-     A full-stack developer event platform built with Next.js 16.2.6, Supabase, Vercel and PostHog. [See Demo](https://nextjs16-supabase-o9mu2k6nj-virza805s-projects.vercel.app/)
+     A full-stack developer event platform built with Next.js 16.2.6, Supabase, Vercel and PostHog. <a href="https://nextjs16-supabase.vercel.app/" target="_blank">See Demo</a>
     </div>
 </div>
 
@@ -50,6 +50,7 @@ A developer-focused event platform for discovering, creating, and booking events
 - **[OGL](https://github.com/oframe/ogl)** — Lightweight WebGL library powering the animated light-rays background effect.
 
 - **[Lucide React](https://lucide.dev/)** — Icon library for UI icons.
+- **[Vercel](https://vercel.com/)** — Build and deploy on Vercel.
 
 ## <a name="features">🔋 Features</a>
 
