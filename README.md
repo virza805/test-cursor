@@ -1,22 +1,23 @@
 <div align="center">
   <br />
-    <a href="https://github.com/your-org/saas" target="_blank">
+    <a href="https://nextjs16-supabase-o9mu2k6nj-virza805s-projects.vercel.app/" target="_blank">
       <img src="public/readme/readme-hero.webp" alt="Project Banner">    
     </a>
   <br />
 
   <div>
 <img src="https://img.shields.io/badge/-Next.js-black?style=for-the-badge&logo=Next.js&logoColor=white" /> 
+<img src="https://img.shields.io/badge/-Supabase-3ECF8E?style=for-the-badge&logo=Supabase&logoColor=white" />
+<img src="https://img.shields.io/badge/-Vercel-black?style=for-the-badge&logo=Vercel&logoColor=white" /> 
 <img src="https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white" /> 
-<img src="https://img.shields.io/badge/-Tailwind-06B6D4?style=for-the-badge&logo=Tailwind%20CSS&logoColor=white" />
-<img src="https://img.shields.io/badge/-Supabase-3ECF8E?style=for-the-badge&logo=Supabase&logoColor=white" /><br/>
+<img src="https://img.shields.io/badge/-Tailwind-06B6D4?style=for-the-badge&logo=Tailwind%20CSS&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/-PostHog-EB9D2A?style=for-the-badge&logo=PostHog&logoColor=white" /> 
   </div>
 
   <h3 align="center">Dev Event Platform</h3>
 
    <div align="center">
-     A full-stack developer event platform built with Next.js 16, Supabase, and PostHog.
+     A full-stack developer event platform built with Next.js 16.2.6, Supabase, Vercel and PostHog. [See Demo](https://nextjs16-supabase-o9mu2k6nj-virza805s-projects.vercel.app/)
     </div>
 </div>
 
@@ -34,7 +35,7 @@ A developer-focused event platform for discovering, creating, and booking events
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- **[Next.js 16](https://nextjs.org/docs)** — React framework with App Router, Server Actions, and the new `use cache` / `cacheLife` APIs. Built with Turbopack.
+- **[Next.js 16.2.6](https://nextjs.org/docs)** — React framework with App Router, Server Actions, and the new `use cache` / `cacheLife` APIs. Built with Turbopack.
 
 - **[React 19](https://react.dev/)** — UI library powering both server and client components.
 

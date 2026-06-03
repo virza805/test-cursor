@@ -13,8 +13,8 @@ const Navbar = () => {
 
                 <ul>
                     <Link href="/">Home</Link>
-                    <Link href="/">Events</Link>
                     <Link href="/events/create">Create Event</Link>
+                    <Link href="https://github.com/virza805/test-cursor"><img src="https://img.shields.io/badge/-GitHub-black?style=for-the-badge&logo=GitHub&logoColor=white" /></Link>
                 </ul>
             </nav>
         </header>
