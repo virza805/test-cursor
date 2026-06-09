@@ -17,6 +17,8 @@
 /out/
 /next.js
 /PostgreSQL
+# PostgreSQL
+/PostgreSQL*
 
 # production
 /build

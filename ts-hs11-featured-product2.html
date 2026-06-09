@@ -74,7 +74,7 @@ ul { list-style: none; padding: 0; margin: 0; }
    SECTION SHELL
    ========================================================= */
 
-.section-products {
+.ts-hs11fp2-section-products {
   position: relative;
   background:
     radial-gradient(1200px 600px at 90% 0%, rgba(59,90,241,.05), transparent 60%),
@@ -84,7 +84,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   overflow: hidden;
 }
 
-.section-products .container {
+.ts-hs11fp2-section-products .ts-hs11fp2-container {
   width: 100%;
   max-width: calc(1280px + 32px);
   margin: 0 auto;
@@ -94,22 +94,22 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 @media (min-width: 1440px) {
-  .section-products .container { padding: 0 16px; }
+  .ts-hs11fp2-section-products .ts-hs11fp2-container { padding: 0 16px; }
 }
 
 /* Decorative ornaments */
-.ornament {
+.ts-hs11fp2-ornament {
   position: absolute;
   pointer-events: none;
   color: #3B5AF1;
 }
-.ornament-tr {
+.ts-hs11fp2-ornament-tr {
   top: 0;
   right: 0;
   width: clamp(140px, 16vw, 220px);
   height: auto;
 }
-.ornament-bl {
+.ts-hs11fp2-ornament-bl {
   bottom: 32px;
   left: 0;
   width: clamp(100px, 12vw, 160px);
@@ -120,13 +120,13 @@ ul { list-style: none; padding: 0; margin: 0; }
    HEADING BLOCK
    ========================================================= */
 
-.block-heading-group {
+.ts-hs11fp2-block-heading-group {
   text-align: center;
   max-width: 1080px;
   margin: 0 auto;
 }
 
-.block-pill {
+.ts-hs11fp2-block-pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -140,7 +140,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   letter-spacing: .01em;
   box-shadow: 0 2px 8px rgba(11,23,51,.04);
 }
-.block-pill .element-dot {
+.ts-hs11fp2-block-pill .ts-hs11fp2-element-dot {
   width: 8px;
   height: 8px;
   background: var(--primary);
@@ -148,7 +148,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: 0 0 0 3px rgba(59,90,241,.18);
 }
 
-.element-title {
+.ts-hs11fp2-element-title {
   margin: 22px 0 0;
   font-size: clamp(26px, 3.4vw, 48px);
   font-weight: 800;
@@ -157,19 +157,19 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: var(--ink);
 }
 
-.element-title-accent {
+.ts-hs11fp2-element-title-accent {
   position: relative;
   color: var(--primary);
   display: inline-block;
 }
-.element-underline { display: none; }
+.ts-hs11fp2-element-underline { display: none; }
 
 @keyframes drawUnderline {
   from { transform: scaleX(0); }
   to   { transform: scaleX(1); }
 }
 
-.element-lede {
+.ts-hs11fp2-element-lede {
   margin: 22px auto 0;
   max-width: 780px;
   font-size: clamp(15px, 1.3vw, 17px);
@@ -181,12 +181,12 @@ ul { list-style: none; padding: 0; margin: 0; }
    FEATURED PRODUCT WRAPPER
    ========================================================= */
 
-.block-featured-wrap {
+.ts-hs11fp2-block-featured-wrap {
   position: relative;
   margin: clamp(40px, 5vw, 72px) auto 0;
 }
 
-.block-featured-badge {
+.ts-hs11fp2-block-featured-badge {
   position: absolute;
   top: -22px;
   left: 50%;
@@ -207,7 +207,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* Card */
-.block-featured-card {
+.ts-hs11fp2-block-featured-card {
   background: #fff;
   border: 1px solid var(--hairline);
   border-radius: var(--radius-xl);
@@ -221,7 +221,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 @media (max-width: 980px) {
-  .block-featured-card {
+  .ts-hs11fp2-block-featured-card {
     grid-template-columns: 1fr;
     gap: 40px;
     padding-top: clamp(40px, 8vw, 56px);
@@ -232,18 +232,18 @@ ul { list-style: none; padding: 0; margin: 0; }
    PRODUCT INFO (left side)
    ========================================================= */
 
-.block-product-info {
+.ts-hs11fp2-block-product-info {
   min-width: 0;
 }
 
-.block-product-headrow {
+.ts-hs11fp2-block-product-headrow {
   display: flex;
   align-items: flex-start;
   gap: clamp(16px, 2vw, 28px);
   margin-bottom: 22px;
 }
 
-.block-product-icon {
+.ts-hs11fp2-block-product-icon {
   flex-shrink: 0;
   width: clamp(64px, 8vw, 88px);
   height: clamp(64px, 8vw, 88px);
@@ -256,15 +256,15 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: 0 4px 14px rgba(59,90,241,.08), inset 0 -2px 0 rgba(11,23,51,.03);
   transition: transform .35s var(--ease-out);
 }
-.block-product-icon svg {
+.ts-hs11fp2-block-product-icon svg {
   width: 58%;
   height: 58%;
 }
-.block-featured-card:hover .block-product-icon {
+.ts-hs11fp2-block-featured-card:hover .ts-hs11fp2-block-product-icon {
   transform: translateY(-3px) rotate(-3deg);
 }
 
-.element-product-title {
+.ts-hs11fp2-element-product-title {
   margin: 6px 0 0;
   font-size: clamp(24px, 2.8vw, 34px);
   font-weight: 700;
@@ -273,7 +273,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: var(--ink-2);
 }
 
-.element-product-desc {
+.ts-hs11fp2-element-product-desc {
   margin: 0;
   font-size: clamp(14px, 1.2vw, 16px);
   line-height: 1.75;
@@ -281,7 +281,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   max-width: 480px;
 }
 
-.element-divider {
+.ts-hs11fp2-element-divider {
   margin: clamp(24px, 3vw, 36px) 0;
   border: 0;
   height: 1px;
@@ -289,31 +289,31 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* feature grid — left-aligned, icon + title inline */
-.block-feature-grid {
+.ts-hs11fp2-block-feature-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(20px, 2.6vw, 30px) clamp(20px, 2.4vw, 36px);
 }
 @media (max-width: 480px) {
-  .block-feature-grid { grid-template-columns: 1fr; gap: 20px; }
+  .ts-hs11fp2-block-feature-grid { grid-template-columns: 1fr; gap: 20px; }
 }
 
-.block-feature-item {
+.ts-hs11fp2-block-feature-item {
   text-align: left;
   padding: 4px 0;
   border-radius: 10px;
   transition: transform .3s var(--ease-out);
 }
-.block-feature-item:hover { transform: translateY(-2px); }
+.ts-hs11fp2-block-feature-item:hover { transform: translateY(-2px); }
 
-.element-feature-head {
+.ts-hs11fp2-element-feature-head {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
 }
 
-.element-icon {
+.ts-hs11fp2-element-icon {
   display: grid;
   place-items: center;
   width: 22px;
@@ -322,10 +322,10 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: var(--primary);
   transition: transform .3s var(--ease-out);
 }
-.element-icon svg { width: 100%; height: 100%; }
-.block-feature-item:hover .element-icon { transform: scale(1.12); }
+.ts-hs11fp2-element-icon svg { width: 100%; height: 100%; }
+.ts-hs11fp2-block-feature-item:hover .ts-hs11fp2-element-icon { transform: scale(1.12); }
 
-.element-feature-label {
+.ts-hs11fp2-element-feature-label {
   margin: 0;
   font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 700;
@@ -334,7 +334,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   line-height: 1.2;
 }
 
-.element-feature-desc {
+.ts-hs11fp2-element-feature-desc {
   margin: 0;
   font-size: clamp(12px, 1vw, 13.5px);
   line-height: 1.55;
@@ -345,13 +345,13 @@ ul { list-style: none; padding: 0; margin: 0; }
    MOCKUP STAGE (right side)
    ========================================================= */
 
-.block-mockup-stage {
+.ts-hs11fp2-block-mockup-stage {
   position: relative;
   min-width: 0;
 }
 
 /* ---------- DASHBOARD CARD ---------- */
-.block-dashboard {
+.ts-hs11fp2-block-dashboard {
   display: grid;
   grid-template-columns: 56px 1fr;
   background: #fff;
@@ -364,18 +364,18 @@ ul { list-style: none; padding: 0; margin: 0; }
   transform: perspective(1200px) rotateY(-2deg) rotateX(2deg);
   transition: transform .6s var(--ease-out);
 }
-.block-mockup-stage:hover .block-dashboard {
+.ts-hs11fp2-block-mockup-stage:hover .ts-hs11fp2-block-dashboard {
   transform: perspective(1200px) rotateY(0deg) rotateX(0deg);
 }
 
 @media (max-width: 980px) {
-  .block-dashboard {
+  .ts-hs11fp2-block-dashboard {
     transform: none;
   }
 }
 
 /* Sidebar */
-.block-dash-side {
+.ts-hs11fp2-block-dash-side {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,7 +384,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   background: #fff;
   border-right: 1px solid var(--hairline-2);
 }
-.element-side-logo {
+.ts-hs11fp2-element-side-logo {
   width: 36px;
   height: 36px;
   background: var(--primary);
@@ -395,9 +395,9 @@ ul { list-style: none; padding: 0; margin: 0; }
   margin-bottom: 8px;
   box-shadow: 0 2px 8px rgba(59,90,241,.18);
 }
-.element-side-logo svg { width: 20px; height: 20px; }
+.ts-hs11fp2-element-side-logo svg { width: 20px; height: 20px; }
 
-.element-side-btn {
+.ts-hs11fp2-element-side-btn {
   width: 36px;
   height: 36px;
   background: transparent;
@@ -408,27 +408,27 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: var(--muted);
   transition: background .2s, color .2s;
 }
-.element-side-btn:hover { background: var(--surface-soft); color: var(--ink-2); }
-.element-side-btn.is-active {
+.ts-hs11fp2-element-side-btn:hover { background: var(--surface-soft); color: var(--ink-2); }
+.ts-hs11fp2-element-side-btn.ts-hs11fp2-is-active {
   background: var(--primary-soft);
   color: var(--primary);
 }
-.element-side-btn svg { width: 18px; height: 18px; }
+.ts-hs11fp2-element-side-btn svg { width: 18px; height: 18px; }
 
 /* Main */
-.block-dash-main {
+.ts-hs11fp2-block-dash-main {
   padding: 14px 16px 16px;
   background: #fff;
   min-width: 0;
 }
 
-.block-dash-topbar {
+.ts-hs11fp2-block-dash-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
 }
-.element-dash-title {
+.ts-hs11fp2-element-dash-title {
   margin: 0;
   font-size: 15px;
   font-weight: 700;
@@ -437,8 +437,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* Dropdown */
-.block-dropdown { position: relative; }
-.element-dropdown-btn {
+.ts-hs11fp2-block-dropdown { position: relative; }
+.ts-hs11fp2-element-dropdown-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -451,11 +451,11 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-weight: 500;
   transition: border-color .2s, box-shadow .2s;
 }
-.element-dropdown-btn:hover { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-glow); }
-.element-dropdown-btn svg { width: 12px; height: 12px; transition: transform .2s; }
-.block-dropdown.is-open .element-dropdown-btn svg { transform: rotate(180deg); }
+.ts-hs11fp2-element-dropdown-btn:hover { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-glow); }
+.ts-hs11fp2-element-dropdown-btn svg { width: 12px; height: 12px; transition: transform .2s; }
+.ts-hs11fp2-block-dropdown.ts-hs11fp2-is-open .ts-hs11fp2-element-dropdown-btn svg { transform: rotate(180deg); }
 
-.block-dropdown-menu {
+.ts-hs11fp2-block-dropdown-menu {
   position: absolute;
   top: calc(100% + 6px);
   right: 0;
@@ -471,12 +471,12 @@ ul { list-style: none; padding: 0; margin: 0; }
   transition: opacity .2s, transform .2s, visibility .2s;
   z-index: 5;
 }
-.block-dropdown.is-open .block-dropdown-menu {
+.ts-hs11fp2-block-dropdown.ts-hs11fp2-is-open .ts-hs11fp2-block-dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-.block-dropdown-menu li {
+.ts-hs11fp2-block-dropdown-menu li {
   padding: 7px 10px;
   font-size: 11px;
   color: var(--ink-2);
@@ -484,42 +484,42 @@ ul { list-style: none; padding: 0; margin: 0; }
   cursor: pointer;
   transition: background .15s;
 }
-.block-dropdown-menu li:hover { background: var(--primary-soft); color: var(--primary); }
+.ts-hs11fp2-block-dropdown-menu li:hover { background: var(--primary-soft); color: var(--primary); }
 
 /* KPIs */
-.block-kpis {
+.ts-hs11fp2-block-kpis {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   margin-bottom: 14px;
 }
-.block-kpi {
+.ts-hs11fp2-block-kpi {
   background: #fff;
   border: 1px solid var(--hairline-2);
   border-radius: 10px;
   padding: 9px 10px;
   transition: transform .25s var(--ease-out), box-shadow .25s, border-color .25s;
 }
-.block-kpi:hover {
+.ts-hs11fp2-block-kpi:hover {
   transform: translateY(-2px);
   border-color: var(--primary);
   box-shadow: 0 4px 14px rgba(59,90,241,.10);
 }
-.element-kpi-label {
+.ts-hs11fp2-element-kpi-label {
   margin: 0;
   font-size: 9.5px;
   color: var(--muted);
   font-weight: 500;
   letter-spacing: .01em;
 }
-.element-kpi-value {
+.ts-hs11fp2-element-kpi-value {
   margin: 4px 0 2px;
   font-size: 14px;
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -.01em;
 }
-.element-kpi-delta {
+.ts-hs11fp2-element-kpi-delta {
   margin: 0;
   display: inline-flex;
   align-items: center;
@@ -530,27 +530,27 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* Chart */
-.block-chart-card {
+.ts-hs11fp2-block-chart-card {
   background: #fff;
   border: 1px solid var(--hairline-2);
   border-radius: 12px;
   padding: 12px 12px 8px;
   margin-bottom: 14px;
 }
-.element-chart-title {
+.ts-hs11fp2-element-chart-title {
   margin: 0 0 10px;
   font-size: 12px;
   font-weight: 600;
   color: var(--ink);
 }
 
-.block-chart-wrap {
+.ts-hs11fp2-block-chart-wrap {
   position: relative;
   display: grid;
   grid-template-columns: 24px 1fr;
   gap: 6px;
 }
-.block-chart-yaxis {
+.ts-hs11fp2-block-chart-yaxis {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -559,12 +559,12 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: var(--muted);
   text-align: right;
 }
-.block-chart-svg {
+.ts-hs11fp2-block-chart-svg {
   width: 100%;
   height: 130px;
   display: block;
 }
-.block-chart-xaxis {
+.ts-hs11fp2-block-chart-xaxis {
   position: absolute;
   bottom: -2px;
   left: 30px;
@@ -577,29 +577,29 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* Chart draw animation */
-.chart-line {
+.ts-hs11fp2-chart-line {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
 }
-.chart-dots circle {
+.ts-hs11fp2-chart-dots circle {
   opacity: 0;
 }
-.is-in-view .chart-line {
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-line {
   animation: drawLine 1.6s var(--ease-move) .3s forwards;
 }
-.is-in-view .chart-area {
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-area {
   animation: fadeArea .9s ease .9s forwards;
 }
-.is-in-view .chart-dots circle {
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle {
   animation: popDot .35s var(--ease-out) forwards;
 }
-.is-in-view .chart-dots circle:nth-child(1) { animation-delay: .5s; }
-.is-in-view .chart-dots circle:nth-child(2) { animation-delay: .7s; }
-.is-in-view .chart-dots circle:nth-child(3) { animation-delay: .9s; }
-.is-in-view .chart-dots circle:nth-child(4) { animation-delay: 1.1s; }
-.is-in-view .chart-dots circle:nth-child(5) { animation-delay: 1.3s; }
-.is-in-view .chart-dots circle:nth-child(6) { animation-delay: 1.5s; }
-.is-in-view .chart-dots circle:nth-child(7) { animation-delay: 1.7s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(1) { animation-delay: .5s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(2) { animation-delay: .7s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(3) { animation-delay: .9s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(4) { animation-delay: 1.1s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(5) { animation-delay: 1.3s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(6) { animation-delay: 1.5s; }
+.ts-hs11fp2-is-in-view .ts-hs11fp2-chart-dots circle:nth-child(7) { animation-delay: 1.7s; }
 
 @keyframes drawLine {
   to { stroke-dashoffset: 0; }
@@ -613,7 +613,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* Chart tooltip */
-.block-chart-tooltip {
+.ts-hs11fp2-block-chart-tooltip {
   position: absolute;
   top: 0;
   left: 60%;
@@ -629,39 +629,39 @@ ul { list-style: none; padding: 0; margin: 0; }
   opacity: 0;
   animation: fadeIn .4s var(--ease-out) 1.4s forwards;
 }
-.element-tt-date { margin: 0; font-size: 9px; color: var(--muted); }
-.element-tt-label { margin: 2px 0 0; font-size: 9px; color: var(--muted); }
-.element-tt-value { margin: 1px 0 0; font-size: 13px; font-weight: 700; color: var(--ink); }
+.ts-hs11fp2-element-tt-date { margin: 0; font-size: 9px; color: var(--muted); }
+.ts-hs11fp2-element-tt-label { margin: 2px 0 0; font-size: 9px; color: var(--muted); }
+.ts-hs11fp2-element-tt-value { margin: 1px 0 0; font-size: 13px; font-weight: 700; color: var(--ink); }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateX(-50%) translateY(-4px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
 
 /* Recent orders */
-.block-recent-head {
+.ts-hs11fp2-block-recent-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
 }
-.element-recent-title {
+.ts-hs11fp2-element-recent-title {
   margin: 0;
   font-size: 12px;
   font-weight: 600;
   color: var(--ink);
 }
-.element-viewall {
+.ts-hs11fp2-element-viewall {
   font-size: 11px;
   color: var(--primary);
   font-weight: 500;
   transition: opacity .2s;
 }
-.element-viewall:hover { opacity: .7; }
+.ts-hs11fp2-element-viewall:hover { opacity: .7; }
 
-.block-recent-list {
+.ts-hs11fp2-block-recent-list {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.element-recent-row {
+.ts-hs11fp2-element-recent-row {
   display: grid;
   grid-template-columns: 20px 65px 1fr 60px 75px;
   align-items: center;
@@ -670,37 +670,37 @@ ul { list-style: none; padding: 0; margin: 0; }
   border-radius: 6px;
   transition: background .2s;
 }
-.element-recent-row:hover { background: var(--surface-soft); }
+.ts-hs11fp2-element-recent-row:hover { background: var(--surface-soft); }
 
-.element-avatar {
+.ts-hs11fp2-element-avatar {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-size: cover;
 }
-.element-recent-id { font-size: 10px; color: var(--muted); font-weight: 500; }
-.element-recent-name { font-size: 11px; color: var(--ink-2); font-weight: 500; }
-.element-recent-amt { font-size: 11px; color: var(--ink); font-weight: 600; text-align: right; }
-.element-status {
+.ts-hs11fp2-element-recent-id { font-size: 10px; color: var(--muted); font-weight: 500; }
+.ts-hs11fp2-element-recent-name { font-size: 11px; color: var(--ink-2); font-weight: 500; }
+.ts-hs11fp2-element-recent-amt { font-size: 11px; color: var(--ink); font-weight: 600; text-align: right; }
+.ts-hs11fp2-element-status {
   font-size: 9px;
   font-weight: 600;
   padding: 3px 7px;
   border-radius: 999px;
   text-align: center;
 }
-.status-completed { background: var(--success-soft); color: var(--success); }
-.status-preparing { background: var(--warn-soft); color: var(--warn); }
+.ts-hs11fp2-status-completed { background: var(--success-soft); color: var(--success); }
+.ts-hs11fp2-status-preparing { background: var(--warn-soft); color: var(--warn); }
 
 /* =========================================================
    TABBED MOCKUP VIEWPORT
    ========================================================= */
 
-.block-mockup-stage {
+.ts-hs11fp2-block-mockup-stage {
   position: relative;
   min-width: 0;
 }
 
-.block-mock-tabs {
+.ts-hs11fp2-block-mock-tabs {
   display: inline-flex;
   gap: 6px;
   padding: 5px;
@@ -711,7 +711,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: 0 2px 10px rgba(11,23,51,.05);
 }
 
-.element-mock-tab {
+.ts-hs11fp2-element-mock-tab {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -726,17 +726,17 @@ ul { list-style: none; padding: 0; margin: 0; }
   overflow: hidden;
   transition: color .25s, background .25s;
 }
-.element-mock-tab svg { width: 15px; height: 15px; position: relative; z-index: 1; }
-.element-mock-tab span:not(.element-tab-fill) { position: relative; z-index: 1; }
-.element-mock-tab:hover { color: var(--ink-2); }
-.element-mock-tab.is-active {
+.ts-hs11fp2-element-mock-tab svg { width: 15px; height: 15px; position: relative; z-index: 1; }
+.ts-hs11fp2-element-mock-tab span:not(.ts-hs11fp2-element-tab-fill) { position: relative; z-index: 1; }
+.ts-hs11fp2-element-mock-tab:hover { color: var(--ink-2); }
+.ts-hs11fp2-element-mock-tab.ts-hs11fp2-is-active {
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--primary-deep));
   box-shadow: 0 3px 10px rgba(59,90,241,.18);
 }
 
 /* auto-rotate progress sweep on the active tab */
-.element-tab-fill {
+.ts-hs11fp2-element-tab-fill {
   position: absolute;
   inset: 0;
   background: rgba(255,255,255,.18);
@@ -744,7 +744,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   transform-origin: left;
   z-index: 0;
 }
-.element-mock-tab.is-active .element-tab-fill.is-running {
+.ts-hs11fp2-element-mock-tab.ts-hs11fp2-is-active .ts-hs11fp2-element-tab-fill.ts-hs11fp2-is-running {
   animation: tabSweep 4s linear forwards;
 }
 @keyframes tabSweep {
@@ -753,12 +753,12 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* viewport that holds both panels */
-.block-mock-viewport {
+.ts-hs11fp2-block-mock-viewport {
   position: relative;
   min-height: 430px;
 }
 
-.block-mock-panel {
+.ts-hs11fp2-block-mock-panel {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -766,16 +766,16 @@ ul { list-style: none; padding: 0; margin: 0; }
   transition: opacity .5s var(--ease-out), transform .5s var(--ease-out);
   pointer-events: none;
 }
-.block-mock-panel.is-active {
+.ts-hs11fp2-block-mock-panel.ts-hs11fp2-is-active {
   position: relative;
   opacity: 1;
   transform: none;
   pointer-events: auto;
 }
-.block-mock-panel[hidden] { display: block; } /* keep in flow for fade; JS toggles class */
+.ts-hs11fp2-block-mock-panel[hidden] { display: block; } /* keep in flow for fade; JS toggles class */
 
 /* phones side by side in the mobile-app panel */
-.block-phone-row {
+.ts-hs11fp2-block-phone-row {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -788,7 +788,7 @@ ul { list-style: none; padding: 0; margin: 0; }
    PHONE FRAME — thinner bezel, better proportions
    ========================================================= */
 
-.block-phone-frame {
+.ts-hs11fp2-block-phone-frame {
   position: relative;
   display: flex;
   width: 204px;
@@ -799,25 +799,25 @@ ul { list-style: none; padding: 0; margin: 0; }
     inset 0 0 0 1.5px rgba(255,255,255,.05),
     0 6px 16px rgba(15,23,42,.10);
 }
-.element-phone-screen { width: 100%; }
+.ts-hs11fp2-element-phone-screen { width: 100%; }
 
 /* staggered depth for the two-phone layout */
-.block-phone-frame--track  { transform: translateY(16px) rotate(-3deg); z-index: 1; }
-.block-phone-frame--order { transform: translateY(6px) rotate(3deg); z-index: 2; }
-.block-phone-row:hover .block-phone-frame--track  { transform: translateY(16px) rotate(-1.5deg); }
-.block-phone-row:hover .block-phone-frame--order { transform: translateY(6px) rotate(1.5deg); }
-.block-phone-frame { transition: transform .5s var(--ease-out); }
+.ts-hs11fp2-block-phone-frame--track  { transform: translateY(16px) rotate(-3deg); z-index: 1; }
+.ts-hs11fp2-block-phone-frame--order { transform: translateY(6px) rotate(3deg); z-index: 2; }
+.ts-hs11fp2-block-phone-row:hover .ts-hs11fp2-block-phone-frame--track  { transform: translateY(16px) rotate(-1.5deg); }
+.ts-hs11fp2-block-phone-row:hover .ts-hs11fp2-block-phone-frame--order { transform: translateY(6px) rotate(1.5deg); }
+.ts-hs11fp2-block-phone-frame { transition: transform .5s var(--ease-out); }
 
-.element-phone-btn {
+.ts-hs11fp2-element-phone-btn {
   position: absolute;
   background: #0b0c12;
   border-radius: 3px;
 }
-.element-phone-btn--power  { right: -1.5px; top: 88px; width: 2.5px; height: 42px; }
-.element-phone-btn--vol-up { left: -1.5px; top: 74px;  width: 2.5px; height: 28px; }
-.element-phone-btn--vol-dn { left: -1.5px; top: 108px; width: 2.5px; height: 28px; }
+.ts-hs11fp2-element-phone-btn--power  { right: -1.5px; top: 88px; width: 2.5px; height: 42px; }
+.ts-hs11fp2-element-phone-btn--vol-up { left: -1.5px; top: 74px;  width: 2.5px; height: 28px; }
+.ts-hs11fp2-element-phone-btn--vol-dn { left: -1.5px; top: 108px; width: 2.5px; height: 28px; }
 
-.element-phone-screen {
+.ts-hs11fp2-element-phone-screen {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -827,7 +827,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   padding-top: 24px;
 }
 
-.element-phone-island {
+.ts-hs11fp2-element-phone-island {
   position: absolute;
   top: 7px;
   left: 50%;
@@ -839,17 +839,17 @@ ul { list-style: none; padding: 0; margin: 0; }
   z-index: 3;
 }
 
-.element-phone-statusbar {
+.ts-hs11fp2-element-phone-statusbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px 2px;
   color: var(--ink);
 }
-.element-sb-time { font-size: 10px; font-weight: 700; letter-spacing: -.01em; }
-.element-sb-icons { display: inline-flex; align-items: center; gap: 4px; }
+.ts-hs11fp2-element-sb-time { font-size: 10px; font-weight: 700; letter-spacing: -.01em; }
+.ts-hs11fp2-element-sb-icons { display: inline-flex; align-items: center; gap: 4px; }
 
-.element-phone-content {
+.ts-hs11fp2-element-phone-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -857,20 +857,20 @@ ul { list-style: none; padding: 0; margin: 0; }
 }
 
 /* ---- Live order tracking screen ---- */
-.element-track-map {
+.ts-hs11fp2-element-track-map {
   position: relative;
   height: 132px;
   margin: 4px 0 0;
   overflow: hidden;
 }
-.element-map-bg { width: 100%; height: 100%; display: block; }
-.element-map-route {
+.ts-hs11fp2-element-map-bg { width: 100%; height: 100%; display: block; }
+.ts-hs11fp2-element-map-route {
   stroke-dashoffset: 0;
   animation: routeFlow 1.4s linear infinite;
 }
 @keyframes routeFlow { to { stroke-dashoffset: -26; } }
 
-.element-courier {
+.ts-hs11fp2-element-courier {
   position: absolute;
   left: 38%;
   top: 38%;
@@ -885,23 +885,23 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: 0 3px 8px rgba(59,90,241,.4);
   animation: courierMove 4s var(--ease-move) infinite alternate;
 }
-.element-courier svg { width: 14px; height: 14px; }
+.ts-hs11fp2-element-courier svg { width: 14px; height: 14px; }
 @keyframes courierMove {
   from { left: 30%; top: 64%; }
   to   { left: 70%; top: 30%; }
 }
 
-.element-track-content { padding-top: 12px; }
+.ts-hs11fp2-element-track-content { padding-top: 12px; }
 
-.element-track-eta {
+.ts-hs11fp2-element-track-eta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
 }
-.element-eta-label { margin: 0; font-size: 10px; color: var(--muted); }
-.element-eta-time { margin: 2px 0 0; font-size: 20px; font-weight: 800; color: var(--ink); letter-spacing: -.02em; }
-.element-eta-badge {
+.ts-hs11fp2-element-eta-label { margin: 0; font-size: 10px; color: var(--muted); }
+.ts-hs11fp2-element-eta-time { margin: 2px 0 0; font-size: 20px; font-weight: 800; color: var(--ink); letter-spacing: -.02em; }
+.ts-hs11fp2-element-eta-badge {
   font-size: 9px;
   font-weight: 700;
   color: var(--primary);
@@ -910,7 +910,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   border-radius: 999px;
 }
 
-.element-courier-card {
+.ts-hs11fp2-element-courier-card {
   display: grid;
   grid-template-columns: 34px 1fr auto;
   align-items: center;
@@ -920,7 +920,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   border-radius: 12px;
   margin-bottom: 12px;
 }
-.element-courier-avatar {
+.ts-hs11fp2-element-courier-avatar {
   width: 34px;
   height: 34px;
   display: grid;
@@ -931,10 +931,10 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 11px;
   font-weight: 700;
 }
-.element-courier-info p { margin: 0; }
-.element-courier-name { font-size: 11px; font-weight: 600; color: var(--ink); }
-.element-courier-role { font-size: 9px; color: var(--muted); margin-top: 1px !important; }
-.element-courier-call {
+.ts-hs11fp2-element-courier-info p { margin: 0; }
+.ts-hs11fp2-element-courier-name { font-size: 11px; font-weight: 600; color: var(--ink); }
+.ts-hs11fp2-element-courier-role { font-size: 9px; color: var(--muted); margin-top: 1px !important; }
+.ts-hs11fp2-element-courier-call {
   width: 28px;
   height: 28px;
   display: grid;
@@ -944,23 +944,23 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: var(--primary);
   box-shadow: 0 1px 4px rgba(15,23,42,.08);
 }
-.element-courier-call svg { width: 14px; height: 14px; }
+.ts-hs11fp2-element-courier-call svg { width: 14px; height: 14px; }
 
-.element-track-steps {
+.ts-hs11fp2-element-track-steps {
   display: flex;
   flex-direction: column;
   gap: 0;
   position: relative;
   margin-top: auto;
 }
-.element-step {
+.ts-hs11fp2-element-step {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 5px 0;
   position: relative;
 }
-.element-step-dot {
+.ts-hs11fp2-element-step-dot {
   position: relative;
   width: 12px;
   height: 12px;
@@ -970,7 +970,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   border: 2px solid var(--hairline);
   z-index: 1;
 }
-.element-step:not(:last-child) .element-step-dot::after {
+.ts-hs11fp2-element-step:not(:last-child) .ts-hs11fp2-element-step-dot::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -980,12 +980,12 @@ ul { list-style: none; padding: 0; margin: 0; }
   height: 18px;
   background: var(--hairline);
 }
-.element-step.is-done .element-step-dot {
+.ts-hs11fp2-element-step.ts-hs11fp2-is-done .ts-hs11fp2-element-step-dot {
   background: var(--primary);
   border-color: var(--primary);
 }
-.element-step.is-done:not(:last-child) .element-step-dot::after { background: var(--primary); }
-.element-step.is-current .element-step-dot {
+.ts-hs11fp2-element-step.ts-hs11fp2-is-done:not(:last-child) .ts-hs11fp2-element-step-dot::after { background: var(--primary); }
+.ts-hs11fp2-element-step.ts-hs11fp2-is-current .ts-hs11fp2-element-step-dot {
   background: var(--primary);
   border-color: var(--primary);
   box-shadow: 0 0 0 4px var(--primary-soft);
@@ -995,18 +995,18 @@ ul { list-style: none; padding: 0; margin: 0; }
   0%, 100% { box-shadow: 0 0 0 3px var(--primary-soft); }
   50%      { box-shadow: 0 0 0 6px rgba(59,90,241,.12); }
 }
-.element-step-text { font-size: 11px; color: var(--muted); }
-.element-step.is-done .element-step-text { color: var(--ink-2); font-weight: 500; }
-.element-step.is-current .element-step-text { color: var(--ink); font-weight: 700; }
+.ts-hs11fp2-element-step-text { font-size: 11px; color: var(--muted); }
+.ts-hs11fp2-element-step.ts-hs11fp2-is-done .ts-hs11fp2-element-step-text { color: var(--ink-2); font-weight: 500; }
+.ts-hs11fp2-element-step.ts-hs11fp2-is-current .ts-hs11fp2-element-step-text { color: var(--ink); font-weight: 700; }
 
-.element-phone-header {
+.ts-hs11fp2-element-phone-header {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 2px 2px 12px;
   border-bottom: 1px solid var(--hairline-2);
 }
-.element-back {
+.ts-hs11fp2-element-back {
   width: 24px;
   height: 24px;
   background: transparent;
@@ -1017,30 +1017,30 @@ ul { list-style: none; padding: 0; margin: 0; }
   border-radius: 6px;
   transition: background .2s;
 }
-.element-back:hover { background: var(--surface-soft); }
-.element-back svg { width: 16px; height: 16px; }
-.element-phone-title {
+.ts-hs11fp2-element-back:hover { background: var(--surface-soft); }
+.ts-hs11fp2-element-back svg { width: 16px; height: 16px; }
+.ts-hs11fp2-element-phone-title {
   margin: 0;
   font-size: 14px;
   font-weight: 700;
   color: var(--ink);
 }
 
-.block-order-items {
+.ts-hs11fp2-block-order-items {
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin: 14px 0;
 }
 
-.element-order-item {
+.ts-hs11fp2-element-order-item {
   display: grid;
   grid-template-columns: 30px minmax(0, 1fr) auto;
   align-items: center;
   gap: 8px;
 }
 
-.element-food {
+.ts-hs11fp2-element-food {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1049,19 +1049,19 @@ ul { list-style: none; padding: 0; margin: 0; }
   place-items: center;
   overflow: hidden;
 }
-.element-food svg { width: 100%; height: 100%; }
+.ts-hs11fp2-element-food svg { width: 100%; height: 100%; }
 
-.element-food-info { min-width: 0; }
-.element-food-info p { margin: 0; }
-.element-food-name { font-size: 10.5px; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.element-food-price { font-size: 9.5px; color: var(--muted); margin-top: 1px !important; }
+.ts-hs11fp2-element-food-info { min-width: 0; }
+.ts-hs11fp2-element-food-info p { margin: 0; }
+.ts-hs11fp2-element-food-name { font-size: 10.5px; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ts-hs11fp2-element-food-price { font-size: 9.5px; color: var(--muted); margin-top: 1px !important; }
 
-.block-qty {
+.ts-hs11fp2-block-qty {
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
-.element-qty-btn {
+.ts-hs11fp2-element-qty-btn {
   width: 19px;
   height: 19px;
   background: transparent;
@@ -1075,13 +1075,13 @@ ul { list-style: none; padding: 0; margin: 0; }
   transition: background .15s, color .15s, border-color .15s, transform .12s;
   user-select: none;
 }
-.element-qty-btn:hover {
+.ts-hs11fp2-element-qty-btn:hover {
   background: var(--primary);
   color: #fff;
   border-color: var(--primary);
 }
-.element-qty-btn:active { transform: scale(.92); }
-.element-qty-num {
+.ts-hs11fp2-element-qty-btn:active { transform: scale(.92); }
+.ts-hs11fp2-element-qty-num {
   min-width: 11px;
   text-align: center;
   font-size: 10.5px;
@@ -1090,28 +1090,28 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-variant-numeric: tabular-nums;
 }
 
-.block-order-summary {
+.ts-hs11fp2-block-order-summary {
   margin-top: auto;
   padding-top: 10px;
   border-top: 1px solid var(--hairline-2);
 }
-.element-summary-row {
+.ts-hs11fp2-element-summary-row {
   display: flex;
   justify-content: space-between;
   font-size: 11px;
   color: var(--muted);
   margin-bottom: 4px;
 }
-.element-summary-row:nth-child(2) {
+.ts-hs11fp2-element-summary-row:nth-child(2) {
   margin-bottom: 10px;
 }
-.element-summary-row span:last-child {
+.ts-hs11fp2-element-summary-row span:last-child {
   color: var(--ink);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
-.block-place-order {
+.ts-hs11fp2-block-place-order {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1126,14 +1126,14 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: var(--shadow-cta);
   transition: transform .15s, box-shadow .15s;
 }
-.block-place-order:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(59,90,241,.22); }
-.block-place-order:active { transform: translateY(0); }
+.ts-hs11fp2-block-place-order:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(59,90,241,.22); }
+.ts-hs11fp2-block-place-order:active { transform: translateY(0); }
 
 /* =========================================================
    BOTTOM CTA BAR
    ========================================================= */
 
-.block-cta-bar {
+.ts-hs11fp2-block-cta-bar {
   margin: clamp(28px, 3vw, 40px) auto 0;
   background: #fff;
   border: 1px solid var(--hairline);
@@ -1146,7 +1146,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: var(--shadow-card);
 }
 
-.element-cta-icon {
+.ts-hs11fp2-element-cta-icon {
   flex-shrink: 0;
   width: 48px;
   height: 48px;
@@ -1157,24 +1157,24 @@ ul { list-style: none; padding: 0; margin: 0; }
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(59,90,241,.20);
 }
-.element-cta-icon svg { width: 22px; height: 22px; }
+.ts-hs11fp2-element-cta-icon svg { width: 22px; height: 22px; }
 
-.element-cta-text { min-width: 0; }
-.element-cta-head {
+.ts-hs11fp2-element-cta-text { min-width: 0; }
+.ts-hs11fp2-element-cta-head {
   margin: 0;
   font-size: clamp(14px, 1.2vw, 16px);
   color: var(--ink);
   line-height: 1.5;
 }
-.element-cta-head strong { font-weight: 600; }
-.element-cta-sub {
+.ts-hs11fp2-element-cta-head strong { font-weight: 600; }
+.ts-hs11fp2-element-cta-sub {
   margin: 4px 0 0;
   font-size: clamp(13px, 1.1vw, 15px);
   color: var(--muted);
   line-height: 1.5;
 }
 
-.block-cta-btn {
+.ts-hs11fp2-block-cta-btn {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -1189,16 +1189,16 @@ ul { list-style: none; padding: 0; margin: 0; }
   transition: transform .2s var(--ease-out), box-shadow .25s;
   white-space: nowrap;
 }
-.block-cta-btn:hover {
+.ts-hs11fp2-block-cta-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59,90,241,.26);
 }
-.block-cta-btn svg {
+.ts-hs11fp2-block-cta-btn svg {
   width: 16px;
   height: 16px;
   transition: transform .25s var(--ease-out);
 }
-.block-cta-btn:hover svg { transform: translate(2px, -2px); }
+.ts-hs11fp2-block-cta-btn:hover svg { transform: translate(2px, -2px); }
 
 /* =========================================================
    ANIMATIONS — entrance
@@ -1209,7 +1209,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   transform: translateY(24px);
   transition: opacity .9s var(--ease-out), transform .9s var(--ease-out);
 }
-[data-anim="fade-up"].is-in-view {
+[data-anim="fade-up"].ts-hs11fp2-is-in-view {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1220,102 +1220,102 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 /* Tablet — tighten dashboard + phones */
 @media (max-width: 1180px) {
-  .block-dashboard { font-size: 11px; }
-  .block-phone-frame { width: 192px; }
-  .block-phone-row { gap: 10px; }
+  .ts-hs11fp2-block-dashboard { font-size: 11px; }
+  .ts-hs11fp2-block-phone-frame { width: 192px; }
+  .ts-hs11fp2-block-phone-row { gap: 10px; }
 }
 
 @media (max-width: 1040px) {
-  .block-phone-frame { width: 178px; }
-  .block-phone-row { gap: 6px; }
+  .ts-hs11fp2-block-phone-frame { width: 178px; }
+  .ts-hs11fp2-block-phone-row { gap: 6px; }
 }
 
 /* Below 980px the card stacks (info over viewport) */
 @media (max-width: 980px) {
-  .block-mock-viewport { min-height: 0; }
-  .block-phone-frame { width: 196px; }
-  .block-phone-row { gap: 16px; }
+  .ts-hs11fp2-block-mock-viewport { min-height: 0; }
+  .ts-hs11fp2-block-phone-frame { width: 196px; }
+  .ts-hs11fp2-block-phone-row { gap: 16px; }
 }
 
 /* Mobile — drop the tabs, show BOTH views stacked, phones get more room */
 @media (max-width: 720px) {
-  .block-dashboard { grid-template-columns: 44px 1fr; font-size: 10px; }
-  .block-dash-side { padding: 8px 0; gap: 4px; }
-  .element-side-logo, .element-side-btn { width: 28px; height: 28px; }
-  .element-side-logo svg { width: 16px; height: 16px; }
-  .element-side-btn svg { width: 14px; height: 14px; }
-  .block-dash-main { padding: 12px 12px; }
-  .block-kpis { gap: 6px; }
-  .block-kpi { padding: 7px 8px; }
-  .element-kpi-value { font-size: 12px; }
-  .element-kpi-label { font-size: 8.5px; }
-  .element-kpi-delta { font-size: 8.5px; }
-  .element-recent-row { grid-template-columns: 18px 55px 1fr 50px 65px; }
+  .ts-hs11fp2-block-dashboard { grid-template-columns: 44px 1fr; font-size: 10px; }
+  .ts-hs11fp2-block-dash-side { padding: 8px 0; gap: 4px; }
+  .ts-hs11fp2-element-side-logo, .ts-hs11fp2-element-side-btn { width: 28px; height: 28px; }
+  .ts-hs11fp2-element-side-logo svg { width: 16px; height: 16px; }
+  .ts-hs11fp2-element-side-btn svg { width: 14px; height: 14px; }
+  .ts-hs11fp2-block-dash-main { padding: 12px 12px; }
+  .ts-hs11fp2-block-kpis { gap: 6px; }
+  .ts-hs11fp2-block-kpi { padding: 7px 8px; }
+  .ts-hs11fp2-element-kpi-value { font-size: 12px; }
+  .ts-hs11fp2-element-kpi-label { font-size: 8.5px; }
+  .ts-hs11fp2-element-kpi-delta { font-size: 8.5px; }
+  .ts-hs11fp2-element-recent-row { grid-template-columns: 18px 55px 1fr 50px 65px; }
 
   /* tabs hidden on mobile — both panels shown in flow */
-  .block-mock-tabs { display: none; }
-  .block-mock-viewport { min-height: 0; }
-  .block-mock-panel,
-  .block-mock-panel[hidden] {
+  .ts-hs11fp2-block-mock-tabs { display: none; }
+  .ts-hs11fp2-block-mock-viewport { min-height: 0; }
+  .ts-hs11fp2-block-mock-panel,
+  .ts-hs11fp2-block-mock-panel[hidden] {
     position: relative;
     opacity: 1;
     transform: none;
     pointer-events: auto;
     display: block;
   }
-  .block-mock-panel[data-panel="mobile"] { margin-top: 28px; }
+  .ts-hs11fp2-block-mock-panel[data-panel="mobile"] { margin-top: 28px; }
 
   /* phones bigger + taller on mobile */
-  .block-phone-row { gap: 16px; }
-  .block-phone-frame { width: 168px; padding: 6px; }
-  .block-phone-frame--track  { transform: translateY(-10px) rotate(-3deg); }
-  .block-phone-frame--order { transform: translateY(10px) rotate(3deg); }
+  .ts-hs11fp2-block-phone-row { gap: 16px; }
+  .ts-hs11fp2-block-phone-frame { width: 168px; padding: 6px; }
+  .ts-hs11fp2-block-phone-frame--track  { transform: translateY(-10px) rotate(-3deg); }
+  .ts-hs11fp2-block-phone-frame--order { transform: translateY(10px) rotate(3deg); }
 
   /* CTA stacks */
-  .block-cta-bar {
+  .ts-hs11fp2-block-cta-bar {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .element-cta-icon { margin: 0 auto; }
-  .block-cta-btn { justify-self: center; }
+  .ts-hs11fp2-element-cta-icon { margin: 0 auto; }
+  .ts-hs11fp2-block-cta-btn { justify-self: center; }
 }
 
 @media (max-width: 540px) {
-  .block-dashboard { transform: none; }
-  .block-chart-yaxis { display: none; }
-  .block-chart-wrap { grid-template-columns: 1fr; }
-  .block-chart-xaxis { left: 0; }
-  .block-kpis { grid-template-columns: repeat(2, 1fr); }
+  .ts-hs11fp2-block-dashboard { transform: none; }
+  .ts-hs11fp2-block-chart-yaxis { display: none; }
+  .ts-hs11fp2-block-chart-wrap { grid-template-columns: 1fr; }
+  .ts-hs11fp2-block-chart-xaxis { left: 0; }
+  .ts-hs11fp2-block-kpis { grid-template-columns: repeat(2, 1fr); }
 
   /* phones stack vertically — each gets full width so content breathes */
-  .block-phone-row {
+  .ts-hs11fp2-block-phone-row {
     flex-direction: column;
     align-items: center;
     gap: 22px;
   }
-  .block-phone-frame {
+  .ts-hs11fp2-block-phone-frame {
     width: 100%;
     max-width: 260px;
     padding: 6px;
   }
-  .block-phone-frame--track,
-  .block-phone-frame--order { transform: none; }
-  .block-phone-row:hover .block-phone-frame--track,
-  .block-phone-row:hover .block-phone-frame--order { transform: none; }
+  .ts-hs11fp2-block-phone-frame--track,
+  .ts-hs11fp2-block-phone-frame--order { transform: none; }
+  .ts-hs11fp2-block-phone-row:hover .ts-hs11fp2-block-phone-frame--track,
+  .ts-hs11fp2-block-phone-row:hover .ts-hs11fp2-block-phone-frame--order { transform: none; }
 }
 
 @media (max-width: 380px) {
-  .block-featured-card { padding: 24px 16px; border-radius: 20px; }
-  .block-dashboard { grid-template-columns: 38px 1fr; }
-  .element-recent-row { grid-template-columns: 14px 46px 1fr 42px 52px; gap: 5px; }
-  .element-recent-id { font-size: 9px; }
-  .element-recent-name { font-size: 10px; }
-  .element-recent-amt { font-size: 10px; }
-  .element-status { font-size: 7.5px; padding: 2px 4px; letter-spacing: 0; }
-  .block-featured-badge { font-size: 10px; padding: 10px 18px; letter-spacing: .08em; }
-  .element-title { font-size: 24px; }
-  .ornament-bl, .ornament-tr { display: none; }
-  .block-phone-row { gap: 8px; }
+  .ts-hs11fp2-block-featured-card { padding: 24px 16px; border-radius: 20px; }
+  .ts-hs11fp2-block-dashboard { grid-template-columns: 38px 1fr; }
+  .ts-hs11fp2-element-recent-row { grid-template-columns: 14px 46px 1fr 42px 52px; gap: 5px; }
+  .ts-hs11fp2-element-recent-id { font-size: 9px; }
+  .ts-hs11fp2-element-recent-name { font-size: 10px; }
+  .ts-hs11fp2-element-recent-amt { font-size: 10px; }
+  .ts-hs11fp2-element-status { font-size: 7.5px; padding: 2px 4px; letter-spacing: 0; }
+  .ts-hs11fp2-block-featured-badge { font-size: 10px; padding: 10px 18px; letter-spacing: .08em; }
+  .ts-hs11fp2-element-title { font-size: 24px; }
+  .ts-hs11fp2-ornament-bl, .ts-hs11fp2-ornament-tr { display: none; }
+  .ts-hs11fp2-block-phone-row { gap: 8px; }
 }
 
 /* Reduced motion */
@@ -1324,20 +1324,20 @@ ul { list-style: none; padding: 0; margin: 0; }
     animation-duration: 0.001s !important;
     transition-duration: 0.001s !important;
   }
-  .element-tab-fill { animation: none !important; }
+  .ts-hs11fp2-element-tab-fill { animation: none !important; }
   [data-anim] { opacity: 1; transform: none; }
 }
 </style>
-<section class="section-products" aria-labelledby="products-heading">
+<section class="ts-hs11fp2-section-products" aria-labelledby="products-heading">
 
   <!-- Decorative corner ornaments -->
-  <svg class="ornament ornament-tr" viewBox="0 0 220 200" fill="none" aria-hidden="true">
+  <svg class="ts-hs11fp2-ornament ts-hs11fp2-ornament-tr" viewBox="0 0 220 200" fill="none" aria-hidden="true">
     <path d="M40 -10 L220 170" stroke="currentColor" stroke-width="1" opacity=".35"/>
     <path d="M70 -10 L220 140" stroke="currentColor" stroke-width="1" opacity=".25"/>
     <path d="M100 -10 L220 110" stroke="currentColor" stroke-width="1" opacity=".18"/>
     <path d="M130 -10 L220 80" stroke="currentColor" stroke-width="1" opacity=".12"/>
   </svg>
-  <svg class="ornament ornament-bl" viewBox="0 0 160 240" aria-hidden="true">
+  <svg class="ts-hs11fp2-ornament ts-hs11fp2-ornament-bl" viewBox="0 0 160 240" aria-hidden="true">
     <g fill="currentColor" opacity=".55">
       <!-- dot grid -->
       <circle cx="6" cy="6" r="1.5"/><circle cx="26" cy="6" r="1.5"/><circle cx="46" cy="6" r="1.5"/><circle cx="66" cy="6" r="1.5"/><circle cx="86" cy="6" r="1.5"/><circle cx="106" cy="6" r="1.5"/>
@@ -1349,20 +1349,20 @@ ul { list-style: none; padding: 0; margin: 0; }
     </g>
   </svg>
 
-  <div class="container">
+  <div class="ts-hs11fp2-container">
 
     <!-- Heading block -->
-    <header class="block-heading-group">
-      <span class="block-pill" data-anim="fade-up">
-        <span class="element-dot"></span>
+    <header class="ts-hs11fp2-block-heading-group">
+      <span class="ts-hs11fp2-block-pill" data-anim="fade-up">
+        <span class="ts-hs11fp2-element-dot"></span>
         <span>Products</span>
       </span>
 
-      <h2 id="products-heading" class="element-title" data-anim="fade-up" data-anim-delay="80">
-        We Also Build Practical <span class="element-title-accent">Digital Products<span class="element-underline" aria-hidden="true"></span></span>
+      <h2 id="products-heading" class="ts-hs11fp2-element-title" data-anim="fade-up" data-anim-delay="80">
+        We Also Build Practical <span class="ts-hs11fp2-element-title-accent">Digital Products<span class="ts-hs11fp2-element-underline" aria-hidden="true"></span></span>
       </h2>
 
-      <p class="element-lede" data-anim="fade-up" data-anim-delay="160">
+      <p class="ts-hs11fp2-element-lede" data-anim="fade-up" data-anim-delay="160">
         Alongside client websites, Travasoft builds focused digital products for industries that
         need better day-to-day tools. It's the software side of what we do — and it keeps our
         client work grounded in solving real operational problems, not just building pages.
@@ -1370,57 +1370,57 @@ ul { list-style: none; padding: 0; margin: 0; }
     </header>
 
     <!-- Featured product card -->
-    <div class="block-featured-wrap" data-anim="fade-up" data-anim-delay="240">
+    <div class="ts-hs11fp2-block-featured-wrap" data-anim="fade-up" data-anim-delay="240">
 
-      <span class="block-featured-badge" aria-hidden="true">
+      <span class="ts-hs11fp2-block-featured-badge" aria-hidden="true">
         <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
           <path d="M8 1 L9.5 6.5 L15 8 L9.5 9.5 L8 15 L6.5 9.5 L1 8 L6.5 6.5 Z" fill="currentColor"/>
         </svg>
         <span>FEATURED PRODUCT</span>
       </span>
 
-      <article class="block-featured-card">
+      <article class="ts-hs11fp2-block-featured-card">
 
         <!-- Left: product info -->
-        <div class="block-product-info">
+        <div class="ts-hs11fp2-block-product-info">
 
-          <div class="block-product-headrow">
-            <div class="block-product-icon" aria-hidden="true">
+          <div class="ts-hs11fp2-block-product-headrow">
+            <div class="ts-hs11fp2-block-product-icon" aria-hidden="true">
               <svg viewBox="0 0 32 32" fill="none">
                 <path d="M16 8 C10.5 8 6 11.5 5 16 L27 16 C26 11.5 21.5 8 16 8 Z" fill="currentColor"/>
                 <rect x="3" y="17" width="26" height="3" rx="1.5" fill="currentColor"/>
                 <circle cx="16" cy="6.5" r="1.6" fill="currentColor"/>
               </svg>
             </div>
-            <h3 class="element-product-title">Restaurant<br>Ordering System</h3>
+            <h3 class="ts-hs11fp2-element-product-title">Restaurant<br>Ordering System</h3>
           </div>
 
-          <p class="element-product-desc">
+          <p class="ts-hs11fp2-element-product-desc">
             A SaaS platform that helps restaurants take
             online orders directly — fewer third-party
             fees, more control, and a smoother
             experience for staff and customers alike.
           </p>
 
-          <hr class="element-divider" aria-hidden="true">
+          <hr class="ts-hs11fp2-element-divider" aria-hidden="true">
 
-          <ul class="block-feature-grid" role="list">
-            <li class="block-feature-item">
-              <div class="element-feature-head">
-                <span class="element-icon" aria-hidden="true">
+          <ul class="ts-hs11fp2-block-feature-grid" role="list">
+            <li class="ts-hs11fp2-block-feature-item">
+              <div class="ts-hs11fp2-element-feature-head">
+                <span class="ts-hs11fp2-element-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
                     <line x1="7" y1="7" x2="7.01" y2="7"/>
                   </svg>
                 </span>
-                <h4 class="element-feature-label">Lower Fees</h4>
+                <h4 class="ts-hs11fp2-element-feature-label">Lower Fees</h4>
               </div>
-              <p class="element-feature-desc">Reduce reliance on third-party platforms</p>
+              <p class="ts-hs11fp2-element-feature-desc">Reduce reliance on third-party platforms</p>
             </li>
 
-            <li class="block-feature-item">
-              <div class="element-feature-head">
-                <span class="element-icon" aria-hidden="true">
+            <li class="ts-hs11fp2-block-feature-item">
+              <div class="ts-hs11fp2-element-feature-head">
+                <span class="ts-hs11fp2-element-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
                     <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
@@ -1428,27 +1428,27 @@ ul { list-style: none; padding: 0; margin: 0; }
                     <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
                   </svg>
                 </span>
-                <h4 class="element-feature-label">More Control</h4>
+                <h4 class="ts-hs11fp2-element-feature-label">More Control</h4>
               </div>
-              <p class="element-feature-desc">Manage menus, orders &amp; customers in one place</p>
+              <p class="ts-hs11fp2-element-feature-desc">Manage menus, orders &amp; customers in one place</p>
             </li>
 
-            <li class="block-feature-item">
-              <div class="element-feature-head">
-                <span class="element-icon" aria-hidden="true">
+            <li class="ts-hs11fp2-block-feature-item">
+              <div class="ts-hs11fp2-element-feature-head">
+                <span class="ts-hs11fp2-element-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 17 9 11 13 15 21 7"/>
                     <polyline points="14 7 21 7 21 14"/>
                   </svg>
                 </span>
-                <h4 class="element-feature-label">Smarter Insights</h4>
+                <h4 class="ts-hs11fp2-element-feature-label">Smarter Insights</h4>
               </div>
-              <p class="element-feature-desc">Real-time analytics for better decisions</p>
+              <p class="ts-hs11fp2-element-feature-desc">Real-time analytics for better decisions</p>
             </li>
 
-            <li class="block-feature-item">
-              <div class="element-feature-head">
-                <span class="element-icon" aria-hidden="true">
+            <li class="ts-hs11fp2-block-feature-item">
+              <div class="ts-hs11fp2-element-feature-head">
+                <span class="ts-hs11fp2-element-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"/>
                     <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
@@ -1456,73 +1456,73 @@ ul { list-style: none; padding: 0; margin: 0; }
                     <line x1="15" y1="9" x2="15.01" y2="9"/>
                   </svg>
                 </span>
-                <h4 class="element-feature-label">Better Experience</h4>
+                <h4 class="ts-hs11fp2-element-feature-label">Better Experience</h4>
               </div>
-              <p class="element-feature-desc">Faster service for staff &amp; happier customers</p>
+              <p class="ts-hs11fp2-element-feature-desc">Faster service for staff &amp; happier customers</p>
             </li>
           </ul>
 
         </div>
 
         <!-- Right: tabbed mockup viewport -->
-        <div class="block-mockup-stage">
+        <div class="ts-hs11fp2-block-mockup-stage">
 
-          <div class="block-mock-tabs" role="tablist" aria-label="Product previews">
-            <button class="element-mock-tab is-active" role="tab" aria-selected="true" data-tab="dashboard">
+          <div class="ts-hs11fp2-block-mock-tabs" role="tablist" aria-label="Product previews">
+            <button class="ts-hs11fp2-element-mock-tab ts-hs11fp2-is-active" role="tab" aria-selected="true" data-tab="dashboard">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
               <span>Dashboard</span>
-              <span class="element-tab-fill" aria-hidden="true"></span>
+              <span class="ts-hs11fp2-element-tab-fill" aria-hidden="true"></span>
             </button>
-            <button class="element-mock-tab" role="tab" aria-selected="false" data-tab="mobile">
+            <button class="ts-hs11fp2-element-mock-tab" role="tab" aria-selected="false" data-tab="mobile">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
               <span>Mobile App</span>
-              <span class="element-tab-fill" aria-hidden="true"></span>
+              <span class="ts-hs11fp2-element-tab-fill" aria-hidden="true"></span>
             </button>
           </div>
 
-          <div class="block-mock-viewport">
+          <div class="ts-hs11fp2-block-mock-viewport">
 
             <!-- PANEL 1: Dashboard -->
-            <div class="block-mock-panel is-active" data-panel="dashboard" role="tabpanel">
-          <div class="block-dashboard" role="img" aria-label="Restaurant ordering dashboard preview">
+            <div class="ts-hs11fp2-block-mock-panel ts-hs11fp2-is-active" data-panel="dashboard" role="tabpanel">
+          <div class="ts-hs11fp2-block-dashboard" role="img" aria-label="Restaurant ordering dashboard preview">
 
             <!-- Sidebar -->
-            <aside class="block-dash-side" aria-hidden="true">
-              <button class="element-side-logo">
+            <aside class="ts-hs11fp2-block-dash-side" aria-hidden="true">
+              <button class="ts-hs11fp2-element-side-logo">
                 <svg viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0.5">
                   <path d="M12 6 C8 6 5 8.5 4.3 12 L19.7 12 C19 8.5 16 6 12 6 Z"/>
                   <rect x="3" y="13" width="18" height="2" rx="1"/>
                   <circle cx="12" cy="4.6" r="1.1"/>
                 </svg>
               </button>
-              <button class="element-side-btn is-active" aria-label="Dashboard">
+              <button class="ts-hs11fp2-element-side-btn ts-hs11fp2-is-active" aria-label="Dashboard">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
               </button>
-              <button class="element-side-btn" aria-label="Orders">
+              <button class="ts-hs11fp2-element-side-btn" aria-label="Orders">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
               </button>
-              <button class="element-side-btn" aria-label="Cart">
+              <button class="ts-hs11fp2-element-side-btn" aria-label="Cart">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
               </button>
-              <button class="element-side-btn" aria-label="Analytics">
+              <button class="ts-hs11fp2-element-side-btn" aria-label="Analytics">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               </button>
-              <button class="element-side-btn" aria-label="Settings">
+              <button class="ts-hs11fp2-element-side-btn" aria-label="Settings">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h0a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5h0a1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v0a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
               </button>
             </aside>
 
             <!-- Main dashboard area -->
-            <div class="block-dash-main">
+            <div class="ts-hs11fp2-block-dash-main">
 
-              <div class="block-dash-topbar">
-                <h4 class="element-dash-title">Dashboard</h4>
-                <div class="block-dropdown" data-dropdown>
-                  <button class="element-dropdown-btn" aria-haspopup="listbox" aria-expanded="false" data-dropdown-trigger>
+              <div class="ts-hs11fp2-block-dash-topbar">
+                <h4 class="ts-hs11fp2-element-dash-title">Dashboard</h4>
+                <div class="ts-hs11fp2-block-dropdown" data-dropdown>
+                  <button class="ts-hs11fp2-element-dropdown-btn" aria-haspopup="listbox" aria-expanded="false" data-dropdown-trigger>
                     <span data-dropdown-label>Today</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                   </button>
-                  <ul class="block-dropdown-menu" role="listbox" data-dropdown-menu>
+                  <ul class="ts-hs11fp2-block-dropdown-menu" role="listbox" data-dropdown-menu>
                     <li role="option" tabindex="0" data-dropdown-value="Today">Today</li>
                     <li role="option" tabindex="0" data-dropdown-value="This Week">This Week</li>
                     <li role="option" tabindex="0" data-dropdown-value="This Month">This Month</li>
@@ -1532,37 +1532,37 @@ ul { list-style: none; padding: 0; margin: 0; }
               </div>
 
               <!-- KPI cards -->
-              <div class="block-kpis">
-                <div class="block-kpi">
-                  <p class="element-kpi-label">Total Orders</p>
-                  <p class="element-kpi-value">1,248</p>
-                  <p class="element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>18.6%</p>
+              <div class="ts-hs11fp2-block-kpis">
+                <div class="ts-hs11fp2-block-kpi">
+                  <p class="ts-hs11fp2-element-kpi-label">Total Orders</p>
+                  <p class="ts-hs11fp2-element-kpi-value">1,248</p>
+                  <p class="ts-hs11fp2-element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>18.6%</p>
                 </div>
-                <div class="block-kpi">
-                  <p class="element-kpi-label">Revenue</p>
-                  <p class="element-kpi-value">৳18,732</p>
-                  <p class="element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>22.4%</p>
+                <div class="ts-hs11fp2-block-kpi">
+                  <p class="ts-hs11fp2-element-kpi-label">Revenue</p>
+                  <p class="ts-hs11fp2-element-kpi-value">৳18,732</p>
+                  <p class="ts-hs11fp2-element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>22.4%</p>
                 </div>
-                <div class="block-kpi">
-                  <p class="element-kpi-label">New Customers</p>
-                  <p class="element-kpi-value">342</p>
-                  <p class="element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>14.3%</p>
+                <div class="ts-hs11fp2-block-kpi">
+                  <p class="ts-hs11fp2-element-kpi-label">New Customers</p>
+                  <p class="ts-hs11fp2-element-kpi-value">342</p>
+                  <p class="ts-hs11fp2-element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>14.3%</p>
                 </div>
-                <div class="block-kpi">
-                  <p class="element-kpi-label">Avg. Order Value</p>
-                  <p class="element-kpi-value">৳523</p>
-                  <p class="element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>8.7%</p>
+                <div class="ts-hs11fp2-block-kpi">
+                  <p class="ts-hs11fp2-element-kpi-label">Avg. Order Value</p>
+                  <p class="ts-hs11fp2-element-kpi-value">৳523</p>
+                  <p class="ts-hs11fp2-element-kpi-delta"><svg viewBox="0 0 8 8" width="8" height="8" aria-hidden="true"><path d="M4 1 L7 6 L1 6 Z" fill="currentColor"/></svg>8.7%</p>
                 </div>
               </div>
 
               <!-- Chart -->
-              <div class="block-chart-card">
-                <p class="element-chart-title">Orders Overview</p>
-                <div class="block-chart-wrap">
-                  <div class="block-chart-yaxis" aria-hidden="true">
+              <div class="ts-hs11fp2-block-chart-card">
+                <p class="ts-hs11fp2-element-chart-title">Orders Overview</p>
+                <div class="ts-hs11fp2-block-chart-wrap">
+                  <div class="ts-hs11fp2-block-chart-yaxis" aria-hidden="true">
                     <span>1K</span><span>750</span><span>500</span><span>250</span>
                   </div>
-                  <svg class="block-chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
+                  <svg class="ts-hs11fp2-block-chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
                     <!-- gridlines -->
                     <line x1="0" y1="20"  x2="600" y2="20"  stroke="#EEF1F5" stroke-width="1"/>
                     <line x1="0" y1="70"  x2="600" y2="70"  stroke="#EEF1F5" stroke-width="1"/>
@@ -1570,12 +1570,12 @@ ul { list-style: none; padding: 0; margin: 0; }
                     <line x1="0" y1="170" x2="600" y2="170" stroke="#EEF1F5" stroke-width="1"/>
 
                     <!-- area fill -->
-                    <path class="chart-area" d="M30,160 L115,140 L200,128 L285,55 L370,70 L455,40 L540,135 L540,180 L30,180 Z" fill="url(#chartGrad)" opacity="0"/>
+                    <path class="ts-hs11fp2-chart-area" d="M30,160 L115,140 L200,128 L285,55 L370,70 L455,40 L540,135 L540,180 L30,180 Z" fill="url(#chartGrad)" opacity="0"/>
                     <!-- line -->
-                    <path class="chart-line" d="M30,160 L115,140 L200,128 L285,55 L370,70 L455,40 L540,135"
+                    <path class="ts-hs11fp2-chart-line" d="M30,160 L115,140 L200,128 L285,55 L370,70 L455,40 L540,135"
                       fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <!-- dots -->
-                    <g class="chart-dots">
+                    <g class="ts-hs11fp2-chart-dots">
                       <circle cx="30"  cy="160" r="3.5" fill="white" stroke="var(--primary)" stroke-width="2"/>
                       <circle cx="115" cy="140" r="3.5" fill="white" stroke="var(--primary)" stroke-width="2"/>
                       <circle cx="200" cy="128" r="3.5" fill="white" stroke="var(--primary)" stroke-width="2"/>
@@ -1594,45 +1594,45 @@ ul { list-style: none; padding: 0; margin: 0; }
                   </svg>
 
                   <!-- floating tooltip -->
-                  <div class="block-chart-tooltip" aria-hidden="true">
-                    <p class="element-tt-date">Fri, 24 May</p>
-                    <p class="element-tt-label">Orders</p>
-                    <p class="element-tt-value">820</p>
+                  <div class="ts-hs11fp2-block-chart-tooltip" aria-hidden="true">
+                    <p class="ts-hs11fp2-element-tt-date">Fri, 24 May</p>
+                    <p class="ts-hs11fp2-element-tt-label">Orders</p>
+                    <p class="ts-hs11fp2-element-tt-value">820</p>
                   </div>
 
-                  <div class="block-chart-xaxis" aria-hidden="true">
+                  <div class="ts-hs11fp2-block-chart-xaxis" aria-hidden="true">
                     <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
                   </div>
                 </div>
               </div>
 
               <!-- Recent orders -->
-              <div class="block-recent">
-                <div class="block-recent-head">
-                  <p class="element-recent-title">Recent Orders</p>
-                  <a href="#" class="element-viewall">View all</a>
+              <div class="ts-hs11fp2-block-recent">
+                <div class="ts-hs11fp2-block-recent-head">
+                  <p class="ts-hs11fp2-element-recent-title">Recent Orders</p>
+                  <a href="#" class="ts-hs11fp2-element-viewall">View all</a>
                 </div>
-                <ul class="block-recent-list" role="list">
-                  <li class="element-recent-row">
-                    <span class="element-avatar" style="background-image:linear-gradient(135deg,#A78BFA,#7C3AED)"></span>
-                    <span class="element-recent-id">#ORD-1048</span>
-                    <span class="element-recent-name">John D.</span>
-                    <span class="element-recent-amt">৳1,250</span>
-                    <span class="element-status status-completed">Completed</span>
+                <ul class="ts-hs11fp2-block-recent-list" role="list">
+                  <li class="ts-hs11fp2-element-recent-row">
+                    <span class="ts-hs11fp2-element-avatar" style="background-image:linear-gradient(135deg,#A78BFA,#7C3AED)"></span>
+                    <span class="ts-hs11fp2-element-recent-id">#ORD-1048</span>
+                    <span class="ts-hs11fp2-element-recent-name">John D.</span>
+                    <span class="ts-hs11fp2-element-recent-amt">৳1,250</span>
+                    <span class="ts-hs11fp2-element-status ts-hs11fp2-status-completed">Completed</span>
                   </li>
-                  <li class="element-recent-row">
-                    <span class="element-avatar" style="background-image:linear-gradient(135deg,#FCA5A5,#EF4444)"></span>
-                    <span class="element-recent-id">#ORD-1047</span>
-                    <span class="element-recent-name">Sarah Ahmed</span>
-                    <span class="element-recent-amt">৳980</span>
-                    <span class="element-status status-preparing">Preparing</span>
+                  <li class="ts-hs11fp2-element-recent-row">
+                    <span class="ts-hs11fp2-element-avatar" style="background-image:linear-gradient(135deg,#FCA5A5,#EF4444)"></span>
+                    <span class="ts-hs11fp2-element-recent-id">#ORD-1047</span>
+                    <span class="ts-hs11fp2-element-recent-name">Sarah Ahmed</span>
+                    <span class="ts-hs11fp2-element-recent-amt">৳980</span>
+                    <span class="ts-hs11fp2-element-status ts-hs11fp2-status-preparing">Preparing</span>
                   </li>
-                  <li class="element-recent-row">
-                    <span class="element-avatar" style="background-image:linear-gradient(135deg,#FCD34D,#F59E0B)"></span>
-                    <span class="element-recent-id">#ORD-1046</span>
-                    <span class="element-recent-name">Hasan Khan</span>
-                    <span class="element-recent-amt">৳1,560</span>
-                    <span class="element-status status-completed">Completed</span>
+                  <li class="ts-hs11fp2-element-recent-row">
+                    <span class="ts-hs11fp2-element-avatar" style="background-image:linear-gradient(135deg,#FCD34D,#F59E0B)"></span>
+                    <span class="ts-hs11fp2-element-recent-id">#ORD-1046</span>
+                    <span class="ts-hs11fp2-element-recent-name">Hasan Khan</span>
+                    <span class="ts-hs11fp2-element-recent-amt">৳1,560</span>
+                    <span class="ts-hs11fp2-element-status ts-hs11fp2-status-completed">Completed</span>
                   </li>
                 </ul>
               </div>
@@ -1642,27 +1642,27 @@ ul { list-style: none; padding: 0; margin: 0; }
             </div>
 
             <!-- PANEL 2: Mobile App -->
-            <div class="block-mock-panel" data-panel="mobile" role="tabpanel" hidden>
-              <div class="block-phone-row">
+            <div class="ts-hs11fp2-block-mock-panel" data-panel="mobile" role="tabpanel" hidden>
+              <div class="ts-hs11fp2-block-phone-row">
 
                 <!-- Phone 1: Live order tracking -->
-                <div class="block-phone-frame block-phone-frame--track" aria-label="Live order tracking preview" role="img">
-                  <span class="element-phone-btn element-phone-btn--power" aria-hidden="true"></span>
-                  <span class="element-phone-btn element-phone-btn--vol-up" aria-hidden="true"></span>
-                  <span class="element-phone-btn element-phone-btn--vol-dn" aria-hidden="true"></span>
-                  <div class="element-phone-screen">
-                    <span class="element-phone-island" aria-hidden="true"></span>
-                    <div class="element-phone-statusbar" aria-hidden="true">
-                      <span class="element-sb-time">9:41</span>
-                      <span class="element-sb-icons">
+                <div class="ts-hs11fp2-block-phone-frame ts-hs11fp2-block-phone-frame--track" aria-label="Live order tracking preview" role="img">
+                  <span class="ts-hs11fp2-element-phone-btn ts-hs11fp2-element-phone-btn--power" aria-hidden="true"></span>
+                  <span class="ts-hs11fp2-element-phone-btn ts-hs11fp2-element-phone-btn--vol-up" aria-hidden="true"></span>
+                  <span class="ts-hs11fp2-element-phone-btn ts-hs11fp2-element-phone-btn--vol-dn" aria-hidden="true"></span>
+                  <div class="ts-hs11fp2-element-phone-screen">
+                    <span class="ts-hs11fp2-element-phone-island" aria-hidden="true"></span>
+                    <div class="ts-hs11fp2-element-phone-statusbar" aria-hidden="true">
+                      <span class="ts-hs11fp2-element-sb-time">9:41</span>
+                      <span class="ts-hs11fp2-element-sb-icons">
                         <svg viewBox="0 0 18 12" width="17" height="11"><rect x="0" y="2" width="2.5" height="8" rx="1" fill="currentColor"/><rect x="4" y="0" width="2.5" height="10" rx="1" fill="currentColor"/><rect x="8" y="4" width="2.5" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="12" y="6" width="2.5" height="4" rx="1" fill="currentColor" opacity=".4"/></svg>
                         <svg viewBox="0 0 22 12" width="20" height="11"><rect x="0.5" y="1" width="18" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/><rect x="2" y="2.5" width="13" height="7" rx="1" fill="currentColor"/><rect x="19.5" y="4" width="1.6" height="4" rx="1" fill="currentColor" opacity=".6"/></svg>
                       </span>
                     </div>
 
                     <!-- Map -->
-                    <div class="element-track-map" aria-hidden="true">
-                      <svg class="element-map-bg" viewBox="0 0 220 150" preserveAspectRatio="xMidYMid slice">
+                    <div class="ts-hs11fp2-element-track-map" aria-hidden="true">
+                      <svg class="ts-hs11fp2-element-map-bg" viewBox="0 0 220 150" preserveAspectRatio="xMidYMid slice">
                         <rect width="220" height="150" fill="#EEF2F8"/>
                         <path d="M-10 40 H230 M-10 95 H230 M55 -10 V160 M150 -10 V160" stroke="#DCE3EE" stroke-width="6" fill="none"/>
                         <path d="M-10 65 H230 M105 -10 V160" stroke="#E4EAF3" stroke-width="3" fill="none"/>
@@ -1670,56 +1670,56 @@ ul { list-style: none; padding: 0; margin: 0; }
                         <rect x="165" y="105" width="34" height="26" rx="3" fill="#E3E9F2"/>
                         <rect x="120" y="14" width="22" height="16" rx="3" fill="#E7ECF4"/>
                         <!-- route -->
-                        <path class="element-map-route" d="M40 120 C70 110 60 70 100 64 S150 56 182 30"
+                        <path class="ts-hs11fp2-element-map-route" d="M40 120 C70 110 60 70 100 64 S150 56 182 30"
                           fill="none" stroke="var(--primary)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="6 7"/>
                         <!-- destination -->
                         <circle cx="182" cy="30" r="6" fill="var(--primary)" opacity=".18"/>
                         <circle cx="182" cy="30" r="3" fill="var(--primary)"/>
                       </svg>
                       <!-- courier marker -->
-                      <span class="element-courier">
+                      <span class="ts-hs11fp2-element-courier">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M5.5 17.5 9 9h5l3 5.5"/><path d="M14 9l1.5-4H18"/></svg>
                       </span>
                     </div>
 
-                    <div class="element-phone-content element-track-content">
-                      <div class="element-track-eta">
+                    <div class="ts-hs11fp2-element-phone-content ts-hs11fp2-element-track-content">
+                      <div class="ts-hs11fp2-element-track-eta">
                         <div>
-                          <p class="element-eta-label">Arriving in</p>
-                          <p class="element-eta-time">12 min</p>
+                          <p class="ts-hs11fp2-element-eta-label">Arriving in</p>
+                          <p class="ts-hs11fp2-element-eta-time">12 min</p>
                         </div>
-                        <span class="element-eta-badge">On the way</span>
+                        <span class="ts-hs11fp2-element-eta-badge">On the way</span>
                       </div>
 
                       <!-- courier -->
-                      <div class="element-courier-card">
-                        <span class="element-courier-avatar">RH</span>
-                        <div class="element-courier-info">
-                          <p class="element-courier-name">Rakib Hasan</p>
-                          <p class="element-courier-role">Your courier</p>
+                      <div class="ts-hs11fp2-element-courier-card">
+                        <span class="ts-hs11fp2-element-courier-avatar">RH</span>
+                        <div class="ts-hs11fp2-element-courier-info">
+                          <p class="ts-hs11fp2-element-courier-name">Rakib Hasan</p>
+                          <p class="ts-hs11fp2-element-courier-role">Your courier</p>
                         </div>
-                        <span class="element-courier-call" aria-hidden="true">
+                        <span class="ts-hs11fp2-element-courier-call" aria-hidden="true">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </span>
                       </div>
 
                       <!-- progress steps -->
-                      <ul class="element-track-steps">
-                        <li class="element-step is-done">
-                          <span class="element-step-dot" aria-hidden="true"></span>
-                          <span class="element-step-text">Order confirmed</span>
+                      <ul class="ts-hs11fp2-element-track-steps">
+                        <li class="ts-hs11fp2-element-step ts-hs11fp2-is-done">
+                          <span class="ts-hs11fp2-element-step-dot" aria-hidden="true"></span>
+                          <span class="ts-hs11fp2-element-step-text">Order confirmed</span>
                         </li>
-                        <li class="element-step is-done">
-                          <span class="element-step-dot" aria-hidden="true"></span>
-                          <span class="element-step-text">Preparing your food</span>
+                        <li class="ts-hs11fp2-element-step ts-hs11fp2-is-done">
+                          <span class="ts-hs11fp2-element-step-dot" aria-hidden="true"></span>
+                          <span class="ts-hs11fp2-element-step-text">Preparing your food</span>
                         </li>
-                        <li class="element-step is-current">
-                          <span class="element-step-dot" aria-hidden="true"></span>
-                          <span class="element-step-text">Out for delivery</span>
+                        <li class="ts-hs11fp2-element-step ts-hs11fp2-is-current">
+                          <span class="ts-hs11fp2-element-step-dot" aria-hidden="true"></span>
+                          <span class="ts-hs11fp2-element-step-text">Out for delivery</span>
                         </li>
-                        <li class="element-step">
-                          <span class="element-step-dot" aria-hidden="true"></span>
-                          <span class="element-step-text">Delivered</span>
+                        <li class="ts-hs11fp2-element-step">
+                          <span class="ts-hs11fp2-element-step-dot" aria-hidden="true"></span>
+                          <span class="ts-hs11fp2-element-step-text">Delivered</span>
                         </li>
                       </ul>
                     </div>
@@ -1727,30 +1727,30 @@ ul { list-style: none; padding: 0; margin: 0; }
                 </div>
 
                 <!-- Phone 2: Your Order -->
-                <div class="block-phone-frame block-phone-frame--order" aria-label="Customer mobile order preview" role="img">
-                  <span class="element-phone-btn element-phone-btn--power" aria-hidden="true"></span>
-                  <span class="element-phone-btn element-phone-btn--vol-up" aria-hidden="true"></span>
-                  <span class="element-phone-btn element-phone-btn--vol-dn" aria-hidden="true"></span>
-                  <div class="element-phone-screen">
-                    <span class="element-phone-island" aria-hidden="true"></span>
-                    <div class="element-phone-statusbar" aria-hidden="true">
-                      <span class="element-sb-time">9:41</span>
-                      <span class="element-sb-icons">
+                <div class="ts-hs11fp2-block-phone-frame ts-hs11fp2-block-phone-frame--order" aria-label="Customer mobile order preview" role="img">
+                  <span class="ts-hs11fp2-element-phone-btn ts-hs11fp2-element-phone-btn--power" aria-hidden="true"></span>
+                  <span class="ts-hs11fp2-element-phone-btn ts-hs11fp2-element-phone-btn--vol-up" aria-hidden="true"></span>
+                  <span class="ts-hs11fp2-element-phone-btn ts-hs11fp2-element-phone-btn--vol-dn" aria-hidden="true"></span>
+                  <div class="ts-hs11fp2-element-phone-screen">
+                    <span class="ts-hs11fp2-element-phone-island" aria-hidden="true"></span>
+                    <div class="ts-hs11fp2-element-phone-statusbar" aria-hidden="true">
+                      <span class="ts-hs11fp2-element-sb-time">9:41</span>
+                      <span class="ts-hs11fp2-element-sb-icons">
                         <svg viewBox="0 0 18 12" width="17" height="11"><rect x="0" y="2" width="2.5" height="8" rx="1" fill="currentColor"/><rect x="4" y="0" width="2.5" height="10" rx="1" fill="currentColor"/><rect x="8" y="4" width="2.5" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="12" y="6" width="2.5" height="4" rx="1" fill="currentColor" opacity=".4"/></svg>
                         <svg viewBox="0 0 22 12" width="20" height="11"><rect x="0.5" y="1" width="18" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/><rect x="2" y="2.5" width="13" height="7" rx="1" fill="currentColor"/><rect x="19.5" y="4" width="1.6" height="4" rx="1" fill="currentColor" opacity=".6"/></svg>
                       </span>
                     </div>
-                    <div class="element-phone-content">
-                      <div class="element-phone-header">
-                        <button class="element-back" aria-label="Back">
+                    <div class="ts-hs11fp2-element-phone-content">
+                      <div class="ts-hs11fp2-element-phone-header">
+                        <button class="ts-hs11fp2-element-back" aria-label="Back">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
                         </button>
-                        <h5 class="element-phone-title">Your Order</h5>
+                        <h5 class="ts-hs11fp2-element-phone-title">Your Order</h5>
                       </div>
 
-            <ul class="block-order-items" data-order>
-              <li class="element-order-item" data-price="14.50">
-                <span class="element-food" data-food="pizza" aria-hidden="true">
+            <ul class="ts-hs11fp2-block-order-items" data-order>
+              <li class="ts-hs11fp2-element-order-item" data-price="14.50">
+                <span class="ts-hs11fp2-element-food" data-food="pizza" aria-hidden="true">
                   <svg viewBox="0 0 40 40">
                     <circle cx="20" cy="20" r="17" fill="#FDE68A"/>
                     <path d="M3.5 20 A16.5 16.5 0 0 1 36.5 20 L20 20 Z" fill="#FBBF24" opacity=".5"/>
@@ -1761,19 +1761,19 @@ ul { list-style: none; padding: 0; margin: 0; }
                     <circle cx="28" cy="22" r="1.6" fill="#16A34A"/>
                   </svg>
                 </span>
-                <div class="element-food-info">
-                  <p class="element-food-name">Pizza Margherita</p>
-                  <p class="element-food-price">$14.50</p>
+                <div class="ts-hs11fp2-element-food-info">
+                  <p class="ts-hs11fp2-element-food-name">Pizza Margherita</p>
+                  <p class="ts-hs11fp2-element-food-price">$14.50</p>
                 </div>
-                <div class="block-qty">
-                  <button class="element-qty-btn" data-qty="dec" aria-label="Decrease quantity">−</button>
-                  <span class="element-qty-num" data-qty-num>1</span>
-                  <button class="element-qty-btn" data-qty="inc" aria-label="Increase quantity">+</button>
+                <div class="ts-hs11fp2-block-qty">
+                  <button class="ts-hs11fp2-element-qty-btn" data-qty="dec" aria-label="Decrease quantity">−</button>
+                  <span class="ts-hs11fp2-element-qty-num" data-qty-num>1</span>
+                  <button class="ts-hs11fp2-element-qty-btn" data-qty="inc" aria-label="Increase quantity">+</button>
                 </div>
               </li>
 
-              <li class="element-order-item" data-price="7.50">
-                <span class="element-food" data-food="salad" aria-hidden="true">
+              <li class="ts-hs11fp2-element-order-item" data-price="7.50">
+                <span class="ts-hs11fp2-element-food" data-food="salad" aria-hidden="true">
                   <svg viewBox="0 0 40 40">
                     <circle cx="20" cy="22" r="15" fill="#FAFAFA"/>
                     <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#86EFAC"/>
@@ -1784,19 +1784,19 @@ ul { list-style: none; padding: 0; margin: 0; }
                     <circle cx="24" cy="23" r="1.6" fill="#FBBF24"/>
                   </svg>
                 </span>
-                <div class="element-food-info">
-                  <p class="element-food-name">Caesar Salad</p>
-                  <p class="element-food-price">$7.50</p>
+                <div class="ts-hs11fp2-element-food-info">
+                  <p class="ts-hs11fp2-element-food-name">Caesar Salad</p>
+                  <p class="ts-hs11fp2-element-food-price">$7.50</p>
                 </div>
-                <div class="block-qty">
-                  <button class="element-qty-btn" data-qty="dec" aria-label="Decrease quantity">−</button>
-                  <span class="element-qty-num" data-qty-num>1</span>
-                  <button class="element-qty-btn" data-qty="inc" aria-label="Increase quantity">+</button>
+                <div class="ts-hs11fp2-block-qty">
+                  <button class="ts-hs11fp2-element-qty-btn" data-qty="dec" aria-label="Decrease quantity">−</button>
+                  <span class="ts-hs11fp2-element-qty-num" data-qty-num>1</span>
+                  <button class="ts-hs11fp2-element-qty-btn" data-qty="inc" aria-label="Increase quantity">+</button>
                 </div>
               </li>
 
-              <li class="element-order-item" data-price="4.50">
-                <span class="element-food" data-food="bread" aria-hidden="true">
+              <li class="ts-hs11fp2-element-order-item" data-price="4.50">
+                <span class="ts-hs11fp2-element-food" data-food="bread" aria-hidden="true">
                   <svg viewBox="0 0 40 40">
                     <ellipse cx="20" cy="22" rx="14" ry="9" fill="#FCD34D"/>
                     <ellipse cx="20" cy="20" rx="14" ry="9" fill="#FBBF24"/>
@@ -1805,28 +1805,28 @@ ul { list-style: none; padding: 0; margin: 0; }
                     <path d="M13 22 Q18 20 24 22" stroke="#D97706" stroke-width="1.2" fill="none"/>
                   </svg>
                 </span>
-                <div class="element-food-info">
-                  <p class="element-food-name">Garlic Bread</p>
-                  <p class="element-food-price">$4.50</p>
+                <div class="ts-hs11fp2-element-food-info">
+                  <p class="ts-hs11fp2-element-food-name">Garlic Bread</p>
+                  <p class="ts-hs11fp2-element-food-price">$4.50</p>
                 </div>
-                <div class="block-qty">
-                  <button class="element-qty-btn" data-qty="dec" aria-label="Decrease quantity">−</button>
-                  <span class="element-qty-num" data-qty-num>1</span>
-                  <button class="element-qty-btn" data-qty="inc" aria-label="Increase quantity">+</button>
+                <div class="ts-hs11fp2-block-qty">
+                  <button class="ts-hs11fp2-element-qty-btn" data-qty="dec" aria-label="Decrease quantity">−</button>
+                  <span class="ts-hs11fp2-element-qty-num" data-qty-num>1</span>
+                  <button class="ts-hs11fp2-element-qty-btn" data-qty="inc" aria-label="Increase quantity">+</button>
                 </div>
               </li>
             </ul>
 
-            <div class="block-order-summary">
-              <div class="element-summary-row">
+            <div class="ts-hs11fp2-block-order-summary">
+              <div class="ts-hs11fp2-element-summary-row">
                 <span>Subtotal</span>
                 <span data-subtotal>$26.50</span>
               </div>
-              <div class="element-summary-row">
+              <div class="ts-hs11fp2-element-summary-row">
                 <span>Delivery Fee</span>
                 <span>$2.99</span>
               </div>
-              <button class="block-place-order" type="button">
+              <button class="ts-hs11fp2-block-place-order" type="button">
                 <span>Place Order</span>
                 <span data-total>$29.49</span>
               </button>
@@ -1845,8 +1845,8 @@ ul { list-style: none; padding: 0; margin: 0; }
     </div>
 
     <!-- Bottom CTA -->
-    <div class="block-cta-bar" data-anim="fade-up" data-anim-delay="320">
-      <div class="element-cta-icon" aria-hidden="true">
+    <div class="ts-hs11fp2-block-cta-bar" data-anim="fade-up" data-anim-delay="320">
+      <div class="ts-hs11fp2-element-cta-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4.5 16.5c-1.5 1.5-2 5-2 5s3.5-.5 5-2c.9-.9 1-2.5 0-3.4-.9-.9-2.5-1-3-1.5z"/>
           <path d="M12 15l-3-3a22 22 0 0 1 2-4.5 12.5 12.5 0 0 1 8.5-5.5c.4 1.2.7 3.5-.5 7a18 18 0 0 1-4 4z"/>
@@ -1854,11 +1854,11 @@ ul { list-style: none; padding: 0; margin: 0; }
           <path d="M12 15v5s2.7-.5 4-2c1.5-1.5 0-5 0-5"/>
         </svg>
       </div>
-      <div class="element-cta-text">
-        <p class="element-cta-head"><strong>We're expanding this side of the business with more tools for service-based industries</strong></p>
-        <p class="element-cta-sub">where better software solves real operational problems.</p>
+      <div class="ts-hs11fp2-element-cta-text">
+        <p class="ts-hs11fp2-element-cta-head"><strong>We're expanding this side of the business with more tools for service-based industries</strong></p>
+        <p class="ts-hs11fp2-element-cta-sub">where better software solves real operational problems.</p>
       </div>
-      <a href="#" class="block-cta-btn">
+      <a href="#" class="ts-hs11fp2-block-cta-btn">
         <span>Explore Our Products</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="7" y1="17" x2="17" y2="7"/>
@@ -1881,17 +1881,17 @@ ul { list-style: none; padding: 0; margin: 0; }
   'use strict';
 
   /* ---------- 1. Scroll-triggered reveal ---------- */
-  const sectionEl = document.querySelector('.section-products');
+  const sectionEl = document.querySelector('.ts-hs11fp2-section-products');
   const animTargets = document.querySelectorAll('[data-anim]');
-  const chartCard = document.querySelector('.block-chart-card');
+  const chartCard = document.querySelector('.ts-hs11fp2-block-chart-card');
 
   const triggerAll = () => {
     animTargets.forEach((el) => {
       const delay = el.dataset.animDelay ? parseInt(el.dataset.animDelay, 10) : 0;
-      setTimeout(() => el.classList.add('is-in-view'), delay);
+      setTimeout(() => el.classList.add('ts-hs11fp2-is-in-view'), delay);
     });
     if (chartCard) {
-      setTimeout(() => chartCard.classList.add('is-in-view'), 400);
+      setTimeout(() => chartCard.classList.add('ts-hs11fp2-is-in-view'), 400);
     }
   };
 
@@ -1919,14 +1919,14 @@ ul { list-style: none; padding: 0; margin: 0; }
 
     trigger.addEventListener('click', (e) => {
       e.stopPropagation();
-      const isOpen = dd.classList.toggle('is-open');
+      const isOpen = dd.classList.toggle('ts-hs11fp2-is-open');
       trigger.setAttribute('aria-expanded', String(isOpen));
     });
 
     menu.querySelectorAll('li').forEach((opt) => {
       const select = () => {
         label.textContent = opt.dataset.dropdownValue;
-        dd.classList.remove('is-open');
+        dd.classList.remove('ts-hs11fp2-is-open');
         trigger.setAttribute('aria-expanded', 'false');
       };
       opt.addEventListener('click', select);
@@ -1939,14 +1939,14 @@ ul { list-style: none; padding: 0; margin: 0; }
   // Close any open dropdown on outside click / Esc
   document.addEventListener('click', () => {
     dropdowns.forEach((dd) => {
-      dd.classList.remove('is-open');
+      dd.classList.remove('ts-hs11fp2-is-open');
       const t = dd.querySelector('[data-dropdown-trigger]');
       if (t) t.setAttribute('aria-expanded', 'false');
     });
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      dropdowns.forEach((dd) => dd.classList.remove('is-open'));
+      dropdowns.forEach((dd) => dd.classList.remove('ts-hs11fp2-is-open'));
     }
   });
 
@@ -1961,7 +1961,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 
     const recalc = () => {
       let subtotal = 0;
-      orderEl.querySelectorAll('.element-order-item').forEach((item) => {
+      orderEl.querySelectorAll('.ts-hs11fp2-element-order-item').forEach((item) => {
         const price = parseFloat(item.dataset.price);
         const qty = parseInt(item.querySelector('[data-qty-num]').textContent, 10);
         subtotal += price * qty;
@@ -1973,7 +1973,7 @@ ul { list-style: none; padding: 0; margin: 0; }
     orderEl.addEventListener('click', (e) => {
       const btn = e.target.closest('[data-qty]');
       if (!btn) return;
-      const item = btn.closest('.element-order-item');
+      const item = btn.closest('.ts-hs11fp2-element-order-item');
       const numEl = item.querySelector('[data-qty-num]');
       let qty = parseInt(numEl.textContent, 10);
 
@@ -1999,7 +1999,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   }
 
   /* ---------- 4. Place Order — friendly feedback (all phones) ---------- */
-  document.querySelectorAll('.block-place-order').forEach((placeBtn) => {
+  document.querySelectorAll('.ts-hs11fp2-block-place-order').forEach((placeBtn) => {
     placeBtn.addEventListener('click', () => {
       if (placeBtn.dataset.busy) return;
       placeBtn.dataset.busy = '1';
@@ -2015,8 +2015,8 @@ ul { list-style: none; padding: 0; margin: 0; }
   });
 
   /* ---------- 5. Tabbed mockup viewport + auto-rotate ---------- */
-  const tabs = Array.from(document.querySelectorAll('.element-mock-tab'));
-  const panels = Array.from(document.querySelectorAll('.block-mock-panel'));
+  const tabs = Array.from(document.querySelectorAll('.ts-hs11fp2-element-mock-tab'));
+  const panels = Array.from(document.querySelectorAll('.ts-hs11fp2-block-mock-panel'));
   const ROTATE_MS = 4000;
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -2026,12 +2026,12 @@ ul { list-style: none; padding: 0; margin: 0; }
     let inView = false;
 
     const runSweep = (idx) => {
-      const fill = tabs[idx] && tabs[idx].querySelector('.element-tab-fill');
+      const fill = tabs[idx] && tabs[idx].querySelector('.ts-hs11fp2-element-tab-fill');
       if (!fill) return;
-      fill.classList.remove('is-running');
+      fill.classList.remove('ts-hs11fp2-is-running');
       if (!prefersReduced) {
         void fill.offsetWidth; // force reflow so the animation restarts
-        fill.classList.add('is-running');
+        fill.classList.add('ts-hs11fp2-is-running');
       }
     };
 
@@ -2039,12 +2039,12 @@ ul { list-style: none; padding: 0; margin: 0; }
       activeIdx = idx;
       tabs.forEach((t, i) => {
         const on = i === idx;
-        t.classList.toggle('is-active', on);
+        t.classList.toggle('ts-hs11fp2-is-active', on);
         t.setAttribute('aria-selected', String(on));
       });
       panels.forEach((p, i) => {
         const on = i === idx;
-        p.classList.toggle('is-active', on);
+        p.classList.toggle('ts-hs11fp2-is-active', on);
         if (on) p.removeAttribute('hidden');
         else p.setAttribute('hidden', '');
       });
